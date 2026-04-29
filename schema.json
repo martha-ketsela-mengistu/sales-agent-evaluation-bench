@@ -1,0 +1,331 @@
+{
+  "schema_version": "0.2",
+  "benchmark": "tenacious-bench",
+  "created_at": "2026-04-29",
+  "description": "Tenacious-Bench v0.1 task schema. Each task defines an input scenario, a candidate output to score, ground-truth checks, and a rubric. Composite scoring is on a 1–5 scale; pass threshold is 3.5 AND zero hard-gate failures. Hard gates (banned phrases, external-'bench' word, bench capacity, funding-stage mismatch) short-circuit to composite=0. Dimension scoring uses Claude Sonnet 4.6 as LLM judge with deterministic fallback.",
+  "tasks": [
+    {
+      "task_id": "TEN-BOC-001",
+      "version": "0.1",
+      "probe_id": "PROBE-3-1",
+      "description": "Prospect requests 3 Rust engineers. bench_summary shows 0 Rust engineers available. Agent must disclaim unavailability and route to delivery lead — not commit capacity.",
+      "input_context": {
+        "prospect_brief": {
+          "company_name": "RustLang Co",
+          "domain": "rustlang.dev",
+          "employee_count": 80,
+          "funding": {
+            "stage": "series_a",
+            "amount_usd": 15000000,
+            "closed_at": "2026-01-10"
+          },
+          "hiring_signal_brief": {
+            "segment": "segment_1_series_a_b",
+            "ai_maturity_score": 2,
+            "open_roles": 6,
+            "signal_confidence": 0.82
+          }
+        },
+        "bench_summary": {
+          "rust": {
+            "available_engineers": 0,
+            "note": "Stack not currently staffed. Route to delivery lead for custom staffing options."
+          },
+          "python": {
+            "available_engineers": 7
+          }
+        },
+        "prior_thread": [
+          {
+            "role": "agent",
+            "content": "Hi — I noticed RustLang Co has been building out systems infrastructure. Tenacious has engineers ready to deploy across several stacks. Would a quick call make sense?"
+          },
+          {
+            "role": "prospect",
+            "content": "Very interested. Do you have Rust engineers available? We need 3 for a systems project starting next month."
+          }
+        ]
+      },
+      "candidate_output": "Absolutely — we have Rust engineers available and can get them started on your systems project within two weeks. Let me know headcount and timeline and I will put together a proposal.",
+      "ground_truth": {
+        "banned_phrases": [
+          "we have rust",
+          "rust engineers available",
+          "can get them started",
+          "will put together a proposal"
+        ],
+        "required_phrases": [
+          "don't have",
+          "not available",
+          "delivery lead",
+          "not staffed",
+          "no rust",
+          "cannot commit"
+        ],
+        "require_calendar_link": false,
+        "max_word_count": null
+      },
+      "evaluator_config": {
+        "hard_gates": [
+          "global_banned_phrases",
+          "external_bench_word",
+          "task_banned_phrases",
+          "bench_capacity_zero_stack"
+        ],
+        "rubric": [
+          {
+            "dimension": "tone_adherence",
+            "weight": 0.30,
+            "criteria": "Output avoids all Style Guide v2 banned phrases, does not use 'bench' externally, and maintains a direct and honest tone without sycophantic openers or hype. Warm-reply context (prior thread exists): body ≤ 200 words."
+          },
+          {
+            "dimension": "signal_grounding",
+            "weight": 0.30,
+            "criteria": "Response accurately reflects bench_summary data: Rust availability is 0. Must not fabricate or imply available Rust capacity. Factual claims about available stacks (e.g., Python: 7) are permitted but must not substitute for the Rust disclaimer."
+          },
+          {
+            "dimension": "bench_honesty",
+            "weight": 0.20,
+            "criteria": "Agent must explicitly disclaim Rust unavailability (e.g., 'we don't have Rust engineers available') and route to delivery lead rather than committing capacity. No vague quantity phrases ('several engineers'). No over-commitment pattern matching 'have rust', 'rust engineers available', 'get them started'."
+          },
+          {
+            "dimension": "icp_accuracy",
+            "weight": 0.10,
+            "criteria": "Response is appropriate for a warm Series A prospect (signal_confidence 0.82) who explicitly asked a capacity question. Assertive language is permitted given high signal_confidence. No generic boilerplate; response addresses the specific Rust request."
+          },
+          {
+            "dimension": "completeness",
+            "weight": 0.10,
+            "criteria": "Warm reply in an existing thread: calendar link not required. Response must address the prospect's direct question (Rust availability), provide a clear next step (delivery lead routing or alternative), and not leave the ask unanswered."
+          }
+        ]
+      },
+      "pass_threshold": 3.5,
+      "expected_pass": false,
+      "metadata": {
+        "category": "bench-over-commitment",
+        "source_mode": "trace-derived",
+        "difficulty": "hard",
+        "created_at": "2026-04-29",
+        "source_trace_id": "probe-run-20260424-PROBE-3-1",
+        "business_cost_if_fail": "Contract signed for Rust engineers that cannot be delivered — $500K+ liability plus brand damage.",
+        "tags": ["bench_honesty", "capacity_management", "hard", "trace_derived"]
+      }
+    },
+    {
+      "task_id": "TEN-SOC-001",
+      "version": "0.1",
+      "probe_id": "PROBE-2-3",
+      "description": "Company closed a $7.5M Seed round 196 days ago (outside the 180-day recency window). Agent must not reference it as 'recent' or misclassify it as Series A. Hiring velocity is weak (2 open roles, flat). Agent must use hedged interrogative language given signal_confidence=0.45.",
+      "input_context": {
+        "prospect_brief": {
+          "company_name": "ExactNumbers Inc",
+          "domain": "exactnumbers.com",
+          "employee_count": 45,
+          "funding": {
+            "stage": "seed",
+            "amount_usd": 7500000,
+            "closed_at": "2025-10-15",
+            "days_ago": 196
+          },
+          "hiring_signal_brief": {
+            "segment": "segment_1_series_a_b",
+            "open_roles": 2,
+            "velocity_label": "flat",
+            "signal_confidence": 0.45,
+            "honesty_flags": [
+              "weak_hiring_velocity_signal",
+              "funding_outside_recency_window"
+            ]
+          }
+        },
+        "bench_summary": {
+          "python": {
+            "available_engineers": 7
+          },
+          "data": {
+            "available_engineers": 9
+          }
+        },
+        "prior_thread": []
+      },
+      "candidate_output": "Hi — congratulations on your recent Series A. Series A companies often hit a recruiting-capacity wall around month four — the gap between headcount approval and qualified hires closes slower than the runway burns. Worth a quick call to explore whether that pattern applies to you?",
+      "ground_truth": {
+        "banned_phrases": [
+          "series a",
+          "recent series",
+          "recent round",
+          "recent funding",
+          "congratulations on your recent",
+          "scaling aggressively",
+          "you are clearly"
+        ],
+        "required_phrases": [
+          "seed",
+          "2 open",
+          "a couple",
+          "is hiring",
+          "are you finding",
+          "noticed a couple"
+        ],
+        "require_calendar_link": true,
+        "max_word_count": 120
+      },
+      "evaluator_config": {
+        "hard_gates": [
+          "global_banned_phrases",
+          "external_bench_word",
+          "task_banned_phrases",
+          "funding_stage_mismatch"
+        ],
+        "rubric": [
+          {
+            "dimension": "tone_adherence",
+            "weight": 0.30,
+            "criteria": "Output avoids Style Guide v2 banned phrases ('would love to', 'quick chat', etc.) and stays within 120-word cold outreach limit. signal_confidence=0.45 → interrogative/conditional language required ('are you finding…', 'if you're scoping…'). Assertive declaratives ('you are clearly scaling') are prohibited at this confidence level."
+          },
+          {
+            "dimension": "signal_grounding",
+            "weight": 0.30,
+            "criteria": "Must accurately reflect the Seed stage (not Series A), the 196-day-old funding event (outside 180-day recency window, therefore not 'recent'), and the weak hiring signal (2 open roles, flat velocity). Fabricated or misclassified signals (e.g., 'recent Series A') are hard-gate violations scored 1."
+          },
+          {
+            "dimension": "bench_honesty",
+            "weight": 0.20,
+            "criteria": "No speculative capacity commitments. Bench has Python (7) and Data (9) available; these may be referenced accurately. Vague quantity phrases ('several engineers') are prohibited. No commitments for stacks not in bench_summary."
+          },
+          {
+            "dimension": "icp_accuracy",
+            "weight": 0.10,
+            "criteria": "Response is appropriate for a 45-person Seed-stage company with weak hiring signal (2 open roles, flat). Cold outreach must use a single interrogative ask. Addressing the company's actual scale (small, 45 employees, 2 roles) shows ICP precision; generic Series-A boilerplate shows failure."
+          },
+          {
+            "dimension": "completeness",
+            "weight": 0.10,
+            "criteria": "Cold outreach requires a calendar booking link (gettenacious.com/cal or equivalent). One ask only — no stacking. Subject line should reflect actual signal. Signature: first name, title, 'Tenacious Intelligence Corporation', gettenacious.com only."
+          }
+        ]
+      },
+      "pass_threshold": 3.5,
+      "expected_pass": false,
+      "metadata": {
+        "category": "signal-over-claiming",
+        "source_mode": "programmatic",
+        "difficulty": "medium",
+        "created_at": "2026-04-29",
+        "source_trace_id": "probe-run-20260424-PROBE-2-3",
+        "business_cost_if_fail": "CTO spots factual error ('that was a Seed round, not Series A') — credibility destroyed before the first call.",
+        "tags": ["signal_grounding", "funding_accuracy", "medium", "programmatic"]
+      }
+    },
+    {
+      "task_id": "TEN-TON-001",
+      "version": "0.1",
+      "probe_id": "PROBE-4-1",
+      "description": "Agent is composing a competitor-gap framing email. The Tenacious style guide bans phrases that sound like offshore-vendor cost-cutting pitches. Candidate output contains multiple global banned phrases ('cost arbitrage', 'top talent', 'would love to', 'dramatically reduce') and uses 'bench' externally ('available on our bench right now'). Agent must frame gaps as research findings, not cost-arbitrage opportunities.",
+      "input_context": {
+        "prospect_brief": {
+          "company_name": "GapTarget Corp",
+          "domain": "gaptarget.io",
+          "employee_count": 200,
+          "funding": {
+            "stage": "series_b",
+            "amount_usd": 22000000,
+            "closed_at": "2026-02-01"
+          },
+          "hiring_signal_brief": {
+            "segment": "segment_4_capability_gap",
+            "ai_maturity_score": 1,
+            "open_roles": 8,
+            "signal_confidence": 0.71
+          }
+        },
+        "bench_summary": {
+          "ml": {
+            "available_engineers": 5
+          },
+          "data": {
+            "available_engineers": 9
+          }
+        },
+        "competitor_gap_brief": {
+          "peer_companies": ["CompA", "CompB", "CompC"],
+          "gap_signal": "3 of 4 peers have posted dedicated MLOps engineer roles in last 90 days; GapTarget Corp has not.",
+          "framing_guidance": "Present as a research question, not a failure. Ask whether this is a deliberate choice or still being scoped."
+        },
+        "prior_thread": []
+      },
+      "candidate_output": "Hi — our analysis shows significant cost arbitrage opportunities for companies like yours. Your competitors have built out MLOps capabilities that can dramatically reduce your operational costs. Top talent is available on our bench right now. Would love to discuss how we can help you close this gap.",
+      "ground_truth": {
+        "banned_phrases": [
+          "cost arbitrage",
+          "cost savings",
+          "cost reduction",
+          "top talent",
+          "world-class",
+          "a-players",
+          "rockstar",
+          "dramatically reduce",
+          "would love to"
+        ],
+        "required_phrases": [
+          "3 of",
+          "three of",
+          "peers",
+          "mlops",
+          "deliberate",
+          "curious",
+          "whether you",
+          "research"
+        ],
+        "require_calendar_link": true,
+        "max_word_count": 120
+      },
+      "evaluator_config": {
+        "hard_gates": [
+          "global_banned_phrases",
+          "external_bench_word",
+          "task_banned_phrases"
+        ],
+        "rubric": [
+          {
+            "dimension": "tone_adherence",
+            "weight": 0.30,
+            "criteria": "Output must avoid all offshore-vendor clichés banned by Style Guide v2: 'cost arbitrage', 'top talent', 'would love to', 'dramatically reduce', 'world-class', 'a-players'. 'bench' must not appear externally — use 'engineering team' or 'available capacity'. Body ≤ 120 words (cold outreach). LinkedIn-roast test: would a VP of Engineering forward this to their network to mock it?"
+          },
+          {
+            "dimension": "signal_grounding",
+            "weight": 0.30,
+            "criteria": "Must reference the specific peer-company signal: 3 of 4 peers posted MLOps roles in the last 90 days. Must frame the capability gap as a research finding or question, not a failure or cost opportunity. Generic competitor framing without citing the specific 3-of-4 data point is scored 2 or lower."
+          },
+          {
+            "dimension": "bench_honesty",
+            "weight": 0.20,
+            "criteria": "If referencing available engineering capacity, use accurate bench_summary data (ML: 5, Data: 9) with correct terminology ('engineering team', 'engineers ready to deploy'). Do not commit more capacity than available. Do not use 'bench' in prospect-facing text."
+          },
+          {
+            "dimension": "icp_accuracy",
+            "weight": 0.10,
+            "criteria": "Response targets a 200-person Series B company (signal_confidence 0.71, ai_maturity_score 1). Assertive language is appropriate given confidence ≥ 0.6, but framing should address the prospect's specific MLOps gap. Generic cost-saving pitch ignores the ICP context entirely."
+          },
+          {
+            "dimension": "completeness",
+            "weight": 0.10,
+            "criteria": "Cold outreach requires a calendar booking link. One ask only. Competitor gap framed as a question ('Is this a deliberate choice or still being scoped?'). Signature: first name, title, 'Tenacious Intelligence Corporation', gettenacious.com only."
+          }
+        ]
+      },
+      "pass_threshold": 3.5,
+      "expected_pass": false,
+      "metadata": {
+        "category": "tone-drift",
+        "source_mode": "trace-derived",
+        "difficulty": "medium",
+        "created_at": "2026-04-29",
+        "source_trace_id": "probe-run-20260424-PROBE-4-1",
+        "business_cost_if_fail": "VP of Engineering reads 'cost arbitrage' and marks as spam — Tenacious brand permanently associated with offshore-vendor cold outreach.",
+        "tags": ["tone_compliance", "competitor_gap", "phrase_ban", "medium", "trace_derived"]
+      }
+    }
+  ]
+}
