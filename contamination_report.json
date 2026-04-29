@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1",
+  "created_at": "2026-04-29",
+  "thresholds": {
+    "ngram_n": 8,
+    "ngram_jaccard_max": 0.15,
+    "cosine_max": 0.85,
+    "timeshift_future": true,
+    "timeshift_stale_years": 3
+  },
+  "partitions": {
+    "train": 126,
+    "dev": 108,
+    "held_out": 109
+  },
+  "source_distribution": {
+    "train": {
+      "trace-derived": 2,
+      "programmatic": 122,
+      "hand-authored": 2
+    },
+    "dev": {
+      "programmatic": 106,
+      "hand-authored": 2
+    },
+    "held_out": {
+      "programmatic": 107,
+      "trace-derived": 1,
+      "hand-authored": 1
+    }
+  },
+  "checks": {
+    "ngram_overlap": {
+      "description": "8-gram Jaccard overlap > 0.15 on scenario-specific input fields between held_out and train+dev",
+      "violations": [],
+      "violation_count": 0,
+      "passed": true
+    },
+    "embedding_similarity": {
+      "description": "TF-IDF cosine similarity > 0.85 between held_out and train+dev",
+      "method": "TF-IDF (1-3 ngram range, sublinear_tf=True) \u2014 proxy for semantic similarity",
+      "note": "Sentence-transformer embeddings recommended for final publication check",
+      "violations": [],
+      "violation_count": 0,
+      "passed": true
+    },
+    "timeshift": {
+      "description": "Funding dates must be in the past and within 3-year window",
+      "violations": [],
+      "violation_count": 0,
+      "passed": true
+    }
+  },
+  "summary": {
+    "total_violations": 0,
+    "fail_count": 0,
+    "passed": true,
+    "note": "fail_count=0 required for publication. TF-IDF cosine is a proxy \u2014 replace with sentence-transformers (e.g. all-MiniLM-L6-v2) before HuggingFace push for a stronger guarantee."
+  }
+}

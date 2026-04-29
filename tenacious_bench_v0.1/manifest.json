@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1",
+  "created_at": "2026-04-29",
+  "seed": 42,
+  "total_tasks": 343,
+  "partitions": {
+    "train": 157,
+    "dev": 114,
+    "held_out": 72
+  },
+  "categories": {
+    "bench-over-commitment": 89,
+    "scheduling-constraint": 31,
+    "signal-over-claiming": 113,
+    "tone-drift": 50,
+    "icp-misclassification": 30,
+    "ghost-company": 30
+  },
+  "source_modes": {
+    "trace-derived": 3,
+    "programmatic": 335,
+    "hand-authored": 5
+  },
+  "pass_rate": 0.3
+}
