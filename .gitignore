@@ -4,3 +4,6 @@ __pycache__
 uv.lock
 week10_data
 docs
+scratch
+.agents
+irr_labels
