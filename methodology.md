@@ -39,14 +39,14 @@ The dominant failure pattern in Week 10 is **inconsistency**: the agent produces
 
 - **Backbone:** Qwen 3.5 0.8B or 2B (fits Colab T4 in 16-bit LoRA per Unsloth Qwen 3.5 guide)
 - **Framework:** Unsloth + TRL `ORPOTrainer` or `CPOTrainer` (SimPO)
-- **Training data source:** Pass/fail pairs extracted from probe runs in `week10_data/trace_log.jsonl` (376 traces; email-generation spans provide the richest signal)
-- **Preference pair format:** `(chosen: rubric-passing output, rejected: constraint-violating output)` — rejections from probe failures; chosen outputs from hand-correction or dev-tier model rewrite using a different model family than the judge (preference leakage prevention per Li et al., 2025)
+- **Training data source:** Tenacious-Bench v0.1 — 283 tasks across 4 authoring modes (75 trace-derived, 75 programmatic, 128 multi-LLM synthesis, 5 hand-authored adversarial); partitioned 139 train / 85 dev / 59 held-out. Each task carries an `expected_pass` label (boolean) set by the deterministic evaluator — directly encoding `(chosen, rejected)` pairs without additional annotation. Raw traces (`week10_data/trace_log.jsonl`, 376 entries) remain available for additional pair mining if the 283-task pool is insufficient.
+- **Preference pair format:** `(chosen: rubric-passing output, rejected: constraint-violating output)` — rejections from `expected_pass=False` tasks; chosen outputs from `expected_pass=True` tasks or dev-tier model rewrites using a different model family than the judge (preference leakage prevention per Li et al., 2025)
 - **Deployment:** Post-generation filter wrapping the Week 10 email composer; returns the highest-scoring candidate from N=3 rejection samples
 
 ---
 
-## Open Questions (resolve before Day 2)
+## Open Questions
 
-- [ ] SimPO vs ORPO final choice: run 10-step test on T4 to confirm memory budget; ORPO is slightly simpler to implement with TRL, SimPO typically shows better calibration on constraint tasks
-- [ ] Confirm rejection N (3 or 5 candidates) against latency budget — 3 candidates adds ~2× base latency
-- [ ] Verify Unsloth supports Qwen 3.5 (not Qwen 2.5) without custom patches
+- **SimPO vs ORPO:** ORPO is simpler to implement with TRL and avoids the length-penalty hyperparameter. SimPO typically shows better calibration on constraint tasks. Decision: start with ORPO, ablate SimPO if dev-set kappa < 0.80 after 200 steps.
+- **Rejection N:** Use N=3. Adds ~2× base latency but is within the 3 s end-to-end budget. N=5 reserved if pass rate on held-out drops below 60% after training.
+- **Unsloth + Qwen 3.5 compatibility:** Confirmed — Unsloth ≥ 0.3.0 supports Qwen 3.5 natively without custom patches (tested 2026-04-30).

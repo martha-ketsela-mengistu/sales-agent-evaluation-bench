@@ -65,23 +65,37 @@ def input_text(task: dict) -> str:
     should target signal that allows a model to shortcut the test, not
     shared infrastructure fields.
     """
-    ctx  = task.get("input_context", {})
-    b    = ctx.get("prospect_brief", {})
-    fund = b.get("funding", {})
-    sig  = b.get("hiring_signal_brief", {})
+    ctx  = task.get("input_context", {}) or {}
+    if isinstance(ctx, str):
+        try: import json as _j; ctx = _j.loads(ctx)
+        except Exception: ctx = {}
+    b    = ctx.get("prospect_brief", {}) or {}
+    if isinstance(b, str):
+        try: import json as _j; b = _j.loads(b)
+        except Exception: b = {}
+    fund = b.get("funding", {}) or {}
+    if isinstance(fund, str):
+        try: import json as _j; fund = _j.loads(fund)
+        except Exception: fund = {}
+    sig  = b.get("hiring_signal_brief", {}) or {}
+    if isinstance(sig, str):
+        try: import json as _j; sig = _j.loads(sig)
+        except Exception: sig = {}
+    prior = ctx.get("prior_thread", []) or []
     thread = " ".join(
-        m.get("content", "") for m in ctx.get("prior_thread", [])
+        m.get("content", "") if isinstance(m, dict) else str(m)
+        for m in (prior if isinstance(prior, list) else [])
     )
     parts = [
-        b.get("company_name", ""),
-        b.get("domain", ""),
-        str(b.get("employee_count", "")),
-        str(fund.get("stage", "")),
-        str(fund.get("amount_usd", "")),
-        str(fund.get("closed_at", "")),
-        str(sig.get("open_roles", "")),
-        str(sig.get("signal_confidence", "")),
-        str(sig.get("velocity_label", "")),
+        b.get("company_name", "") if isinstance(b, dict) else "",
+        b.get("domain", "") if isinstance(b, dict) else "",
+        str(b.get("employee_count", "") if isinstance(b, dict) else ""),
+        str(fund.get("stage", "") if isinstance(fund, dict) else ""),
+        str(fund.get("amount_usd", "") if isinstance(fund, dict) else ""),
+        str(fund.get("closed_at", "") if isinstance(fund, dict) else ""),
+        str(sig.get("open_roles", "") if isinstance(sig, dict) else ""),
+        str(sig.get("signal_confidence", "") if isinstance(sig, dict) else ""),
+        str(sig.get("velocity_label", "") if isinstance(sig, dict) else ""),
         thread,
     ]
     return " ".join(p for p in parts if p)
@@ -203,10 +217,19 @@ def check_timeshift(all_tasks: list[dict]) -> list[dict]:
     """
     violations = []
     for t in all_tasks:
-        fund = (t.get("input_context", {})
-                  .get("prospect_brief", {})
-                  .get("funding", {}))
-        if not fund:
+        ctx  = t.get("input_context", {}) or {}
+        if isinstance(ctx, str):
+            try: import json as _j; ctx = _j.loads(ctx)
+            except Exception: ctx = {}
+        b    = ctx.get("prospect_brief", {}) or {}
+        if isinstance(b, str):
+            try: import json as _j; b = _j.loads(b)
+            except Exception: b = {}
+        fund = b.get("funding", {}) or {}
+        if isinstance(fund, str):
+            try: import json as _j; fund = _j.loads(fund)
+            except Exception: fund = {}
+        if not fund or not isinstance(fund, dict):
             continue
 
         stage    = fund.get("stage")
