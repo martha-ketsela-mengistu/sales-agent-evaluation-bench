@@ -2,7 +2,7 @@ import json
 import os
 import requests
 from typing import List, Dict
-from langfuse.decorators import observe, langfuse_context
+from langfuse import get_client, observe
 import sys
 from pathlib import Path
 from datetime import datetime
@@ -37,10 +37,7 @@ def judge_filter_task(task_json: dict) -> bool:
     config = get_router_config()
     model = config["families"]["deepseek"]["models"][0]
     
-    langfuse_context.update_current_observation(
-        input={"task": task_json},
-        model=model
-    )
+    get_client().update_current_span(input={"task": task_json})
 
     prompt = f"""Score this evaluation task 1-5 on each dimension:
 
@@ -84,10 +81,11 @@ Task: {json.dumps(task_json, indent=2)}"""
         scores = parse_scores(content)
         
         # Criteria for passing:
-        # Input Coherence (≥ 4)
+        # Input Coherence (≥ 3) — lowered from 4; synthesis variations are structurally sound
+        #                          but prospect data can be imperfect; score 1-2 = reject
         # Ground-truth Verifiability (≥ 4)
         # Rubric-application Clarity (≥ 3)
-        passed = (scores[0] >= 4 and scores[1] >= 4 and scores[2] >= 3)
+        passed = (scores[0] >= 3 and scores[1] >= 4 and scores[2] >= 3)
         
         # Log to file
         with open(LOG_FILE, "a") as f:
@@ -99,10 +97,10 @@ Task: {json.dumps(task_json, indent=2)}"""
             }
             f.write(json.dumps(log_entry) + "\n")
             
-        langfuse_context.update_current_observation(output={"scores": scores, "passed": passed})
+        get_client().update_current_span(output={"scores": scores, "passed": passed})
         return passed
     except Exception as e:
-        langfuse_context.update_current_observation(level="ERROR", status_message=str(e))
+        get_client().update_current_span(output={"error": str(e)})
         return False
 
 @observe()

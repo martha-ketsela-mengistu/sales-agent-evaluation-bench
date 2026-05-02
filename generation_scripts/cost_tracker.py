@@ -46,7 +46,19 @@ def log_cost(bucket: str, purpose: str, model: str, tokens_in: int, tokens_out: 
     
     with open(LOG_FILE, "w") as f:
         json.dump(data, f, indent=2)
-    
+
+    # Forward to pipeline logger if it's active
+    try:
+        import sys
+        from pathlib import Path
+        scripts_dir = str(Path(__file__).parent)
+        if scripts_dir not in sys.path:
+            sys.path.insert(0, scripts_dir)
+        from pipeline_logger import cost_update as _log_cost
+        _log_cost(bucket, model, cost, running_total)
+    except Exception:
+        pass
+
     # Check budget based on cost.md (Act II budget limit = $5.00)
     if running_total > 5.00:
         raise BudgetExceededError(f"Act II budget exceeded: ${running_total:.2f}")

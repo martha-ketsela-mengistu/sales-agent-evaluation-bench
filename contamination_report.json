@@ -9,52 +9,2008 @@
     "timeshift_stale_years": 3
   },
   "partitions": {
-    "train": 126,
-    "dev": 108,
-    "held_out": 109
+    "train": 139,
+    "dev": 85,
+    "held_out": 59
   },
   "source_distribution": {
     "train": {
-      "trace-derived": 2,
-      "programmatic": 122,
+      "trace-derived": 37,
+      "programmatic": 36,
+      "multi-llm-synthesis": 64,
       "hand-authored": 2
     },
     "dev": {
-      "programmatic": 106,
-      "hand-authored": 2
+      "trace-derived": 23,
+      "programmatic": 24,
+      "multi-llm-synthesis": 38
     },
     "held_out": {
-      "programmatic": 107,
-      "trace-derived": 1,
-      "hand-authored": 1
+      "trace-derived": 15,
+      "programmatic": 15,
+      "multi-llm-synthesis": 26,
+      "hand-authored": 3
     }
   },
   "checks": {
     "ngram_overlap": {
       "description": "8-gram Jaccard overlap > 0.15 on scenario-specific input fields between held_out and train+dev",
-      "violations": [],
-      "violation_count": 0,
-      "passed": true
+      "violations": [
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-015",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-017",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-003",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-018",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-002",
+          "ngram_size": 8,
+          "overlap_count": 18,
+          "jaccard": 0.3462,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-011",
+          "ngram_size": 8,
+          "overlap_count": 18,
+          "jaccard": 0.3462,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-014",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-009",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-008",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-023",
+          "ngram_size": 8,
+          "overlap_count": 25,
+          "jaccard": 0.5556,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-012",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-016",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-007",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-004",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-005",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-021",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-001",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-024",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-010",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-020",
+          "ref_task_id": "TEN-BOC-019",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-015",
+          "ngram_size": 8,
+          "overlap_count": 18,
+          "jaccard": 0.3462,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-017",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-003",
+          "ngram_size": 8,
+          "overlap_count": 25,
+          "jaccard": 0.5556,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-018",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-002",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-011",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-014",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-009",
+          "ngram_size": 8,
+          "overlap_count": 25,
+          "jaccard": 0.5556,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-008",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-023",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-012",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-016",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-007",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-004",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-005",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-021",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-001",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-024",
+          "ngram_size": 8,
+          "overlap_count": 18,
+          "jaccard": 0.3462,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-010",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-019",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-015",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-017",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-003",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-018",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-002",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-011",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-014",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-009",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-008",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-023",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-012",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-016",
+          "ngram_size": 8,
+          "overlap_count": 18,
+          "jaccard": 0.3462,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-007",
+          "ngram_size": 8,
+          "overlap_count": 18,
+          "jaccard": 0.3462,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-004",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-005",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-021",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-001",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-024",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-010",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-025",
+          "ref_task_id": "TEN-BOC-019",
+          "ngram_size": 8,
+          "overlap_count": 25,
+          "jaccard": 0.5556,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "have",
+            "scala",
+            "engineers?",
+            "we",
+            "need",
+            "2",
+            "starting",
+            "next"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-015",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-017",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-003",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-018",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-002",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-011",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-014",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-009",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-008",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-023",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-012",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-016",
+          "ngram_size": 8,
+          "overlap_count": 25,
+          "jaccard": 0.5556,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-007",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-004",
+          "ngram_size": 8,
+          "overlap_count": 18,
+          "jaccard": 0.3462,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-005",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-021",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-001",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-024",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-010",
+          "ngram_size": 8,
+          "overlap_count": 25,
+          "jaccard": 0.5556,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-013",
+          "ref_task_id": "TEN-BOC-019",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-015",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-017",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-003",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-018",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-002",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-011",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-014",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-009",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-008",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-023",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-012",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-016",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-007",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-004",
+          "ngram_size": 8,
+          "overlap_count": 18,
+          "jaccard": 0.3462,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-005",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-021",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-001",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-024",
+          "ngram_size": 8,
+          "overlap_count": 21,
+          "jaccard": 0.4286,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "engineers",
+            "across",
+            "several",
+            "stacks.",
+            "would",
+            "a",
+            "quick",
+            "call"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-010",
+          "ngram_size": 8,
+          "overlap_count": 17,
+          "jaccard": 0.3208,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "out",
+            "its",
+            "engineering",
+            "team.",
+            "tenacious",
+            "has",
+            "engineers",
+            "across"
+          ]
+        },
+        {
+          "held_out_task_id": "TEN-BOC-022",
+          "ref_task_id": "TEN-BOC-019",
+          "ngram_size": 8,
+          "overlap_count": 25,
+          "jaccard": 0.5556,
+          "jaccard_threshold": 0.15,
+          "sample_ngram": [
+            "have",
+            "scala",
+            "engineers?",
+            "we",
+            "need",
+            "2",
+            "starting",
+            "next"
+          ]
+        }
+      ],
+      "violation_count": 100,
+      "passed": false
     },
     "embedding_similarity": {
       "description": "TF-IDF cosine similarity > 0.85 between held_out and train+dev",
       "method": "TF-IDF (1-3 ngram range, sublinear_tf=True) \u2014 proxy for semantic similarity",
       "note": "Sentence-transformer embeddings recommended for final publication check",
-      "violations": [],
-      "violation_count": 0,
-      "passed": true
+      "violations": [
+        {
+          "held_out_task_id": "TEN-TR-009",
+          "ref_task_id": "TEN-TR-013",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-009",
+          "ref_task_id": "TEN-TR-017",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-010",
+          "ref_task_id": "TEN-TR-052",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-010",
+          "ref_task_id": "TEN-TR-024",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-010",
+          "ref_task_id": "TEN-TR-014",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-018",
+          "ref_task_id": "TEN-TR-052",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-018",
+          "ref_task_id": "TEN-TR-024",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-018",
+          "ref_task_id": "TEN-TR-014",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-004",
+          "ref_task_id": "TEN-TR-002",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-015",
+          "ref_task_id": "TEN-TR-011",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-015",
+          "ref_task_id": "TEN-TR-019",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-064",
+          "ref_task_id": "TEN-TR-036",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-028",
+          "ref_task_id": "TEN-TR-056",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-073",
+          "ref_task_id": "TEN-TR-046",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-063",
+          "ref_task_id": "TEN-TR-035",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-034",
+          "ref_task_id": "TEN-TR-062",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-039",
+          "ref_task_id": "TEN-TR-066",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-029",
+          "ref_task_id": "TEN-TR-057",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-TR-022",
+          "ref_task_id": "TEN-TR-050",
+          "cosine_similarity": 1.0,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-003",
+          "cosine_similarity": 0.9345,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-009",
+          "cosine_similarity": 0.9308,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-004",
+          "cosine_similarity": 0.9005,
+          "threshold": 0.85
+        },
+        {
+          "held_out_task_id": "TEN-BOC-006",
+          "ref_task_id": "TEN-BOC-005",
+          "cosine_similarity": 0.9005,
+          "threshold": 0.85
+        }
+      ],
+      "violation_count": 23,
+      "passed": false
     },
     "timeshift": {
       "description": "Funding dates must be in the past and within 3-year window",
-      "violations": [],
-      "violation_count": 0,
-      "passed": true
+      "violations": [
+        {
+          "task_id": "TEN-TR-003",
+          "issue": "funding.closed_at is > 3 years ago (stale signal)",
+          "closed_at": "2022-07-14",
+          "stale_cutoff": "2023-04-29"
+        },
+        {
+          "task_id": "TEN-TR-001",
+          "issue": "funding.closed_at is > 3 years ago (stale signal)",
+          "closed_at": "2022-07-14",
+          "stale_cutoff": "2023-04-29"
+        }
+      ],
+      "violation_count": 2,
+      "passed": false
     }
   },
   "summary": {
-    "total_violations": 0,
-    "fail_count": 0,
-    "passed": true,
+    "total_violations": 125,
+    "fail_count": 125,
+    "passed": false,
     "note": "fail_count=0 required for publication. TF-IDF cosine is a proxy \u2014 replace with sentence-transformers (e.g. all-MiniLM-L6-v2) before HuggingFace push for a stronger guarantee."
   }
 }

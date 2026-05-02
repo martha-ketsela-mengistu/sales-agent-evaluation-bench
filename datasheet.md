@@ -27,8 +27,8 @@ Tenacious-Bench v0.1 is a 343-task evaluation benchmark for B2B sales outreach a
 - *Pass rate ~30%:* Intentionally challenge-weighted. The benchmark is designed to expose failure modes, not to reward adequate performance.
 
 **Known limitations:**
-- Trace-derived tasks represent only 3 of 343 tasks (0.9%) — the trace pool had limited email content (18 HTML excerpts) and only one clean (baseline-FAIL, method-PASS) pair for bench-over-commitment. Multi-LLM synthesis (not yet run) is required to reach the target ~25% trace-derived share.
-- LLM judge calibration has not been validated against human labels. Inter-rater agreement (30-task hand-label protocol) is pending.
+- Contamination check (v0.1) reports 125 violations: 100 are structural false-positives from programmatic template tasks sharing fixed n-grams by design (e.g., "TechCo-N requests R engineers" appears in both train and held-out by template); 23 are duplicate trace tasks with cosine=1.0 (identical text extracted from the same trace pair appears in multiple partitions); 2 are stale funding dates (>3 years old) in TEN-TR-001 and TEN-TR-003. These require deduplication of trace tasks before publication.
+- Inter-rater agreement was computed with synthetic fill (κ=1.00 on all dimensions) — human labeler validation is pending before leaderboard publication.
 - `scoring_evaluator.py` uses TF-IDF cosine as a proxy for embedding similarity in the contamination check. Sentence-transformer embeddings (e.g., `all-MiniLM-L6-v2`) should replace this before final publication.
 - The benchmark covers six of the ten failure categories identified in the audit. Four categories (multi-thread-conflict, company-objection-pivot, SDR-role-confusion, greeting-only-close) are not yet represented.
 
@@ -59,29 +59,30 @@ Each instance is a sales evaluation task. It contains: (1) an `input_context` wi
 
 | Partition | Count | Share |
 |---|---|---|
-| train | 126 | 37% |
-| dev | 108 | 31% |
-| held_out | 109 | 32% |
-| **Total** | **343** | 100% |
+| train | 139 | 49% |
+| dev | 85 | 30% |
+| held_out | 59 | 21% |
+| **Total** | **283** | 100% |
 
 Category distribution:
 
 | Category | Count | Share |
 |---|---|---|
-| signal-over-claiming | 113 | 33% |
-| bench-over-commitment | 89 | 26% |
-| tone-drift | 50 | 15% |
-| scheduling-constraint | 31 | 9% |
-| ghost-company | 30 | 9% |
-| icp-misclassification | 30 | 9% |
+| icp-misclassification | 96 | 34% |
+| signal-over-claiming | 73 | 26% |
+| bench-over-commitment | 41 | 14% |
+| ghost-company | 29 | 10% |
+| multi-thread-conflict | 28 | 10% |
+| tone-drift | 16 | 6% |
 
 Source mode distribution:
 
 | Source mode | Count | Share |
 |---|---|---|
-| programmatic | 335 | 98% |
-| hand-authored | 5 | 1% |
-| trace-derived | 3 | 1% |
+| multi-llm-synthesis | 128 | 45% |
+| programmatic | 75 | 27% |
+| trace-derived | 75 | 26% |
+| hand-authored | 5 | 2% |
 
 **Does the dataset contain all possible instances or is it a sample?**  
 It is a sample. The programmatic tier covers a structured parameter sweep (8 funding variants × 5 signal variants × 7 bench configurations × 14 company templates = up to 3,920 combinations before deduplication). After deduplication and calibration, 335 unique programmatic tasks remain. The hand-authored tier covers 5 adversarial edge cases. The trace-derived tier covers 3 tasks from `held_out_traces.jsonl` where probe context was fully annotated. Multi-LLM synthesis (target ~25% of final dataset) is not yet run.
@@ -96,7 +97,7 @@ Yes. `expected_pass` (boolean) is the primary label. It is set by the determinis
 Tasks from the ghost-company and scheduling-constraint categories have sparse `hiring_signal_brief` fields (low or absent funding signals) by design — these categories test agent behavior when signal is insufficient, so the sparsity is intentional.
 
 **Are there recommended data splits?**  
-Yes: train (50% target, 37% actual), dev (30%), held_out (20%/32%). The split is template-aware: all variants of a given company template reside in one partition. The held_out partition is gitignored from training scripts and should remain sealed until leaderboard publication.
+Yes: train (50% target, 49% actual), dev (30% target, 30% actual), held_out (20% target, 21% actual). The split is template-aware: all variants of a given company template reside in one partition. The held_out partition is gitignored from training scripts and should remain sealed until leaderboard publication.
 
 **Are there errors, sources of noise, or redundancies?**  
 The `expected_pass` labels are set by the deterministic evaluator. Tasks where the LLM judge (full scoring) would disagree with the deterministic scorer are not yet identified — this requires the inter-rater agreement protocol to complete. The deterministic scorer is conservative on `signal_grounding` and `icp_accuracy` (defaults to score=3 for both), which may under-score passing outputs.
@@ -144,7 +145,7 @@ Not applicable — all data is synthetic and describes no real individuals or co
 Yes:
 - HTML tags stripped from trace-derived email excerpts using `re.sub(r"<[^>]+>", " ", html)`.
 - Near-duplicate tasks removed by input-field 5-gram Jaccard deduplication (threshold 0.6) during dataset construction.
-- `expected_pass` labels recalibrated from aspirational category-logic values to deterministic evaluator scores, correcting 73 labels (21% of total tasks).
+- `expected_pass` labels recalibrated from aspirational category-logic values to deterministic evaluator scores. Multi-LLM synthesis tasks (128 of 283) were filtered by DeepSeek judge (coherence ≥3, verifiability ≥4, clarity ≥3) before inclusion.
 
 **Was raw data saved?**  
 Yes. The pre-deduplication programmatic task pool (2,808 tasks) is reproducible by running `build_dataset.py` with the same seed and inspecting before the dedup step. The `generation_scripts/` directory contains all generation code.

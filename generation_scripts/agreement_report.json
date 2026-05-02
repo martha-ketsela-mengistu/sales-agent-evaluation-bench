@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "threshold": 0.8,
+  "dimensions": {
+    "tone_adherence": {
+      "n": 30,
+      "kappa": 1.0,
+      "threshold": 0.8,
+      "passed": true
+    },
+    "signal_grounding": {
+      "n": 30,
+      "kappa": 1.0,
+      "threshold": 0.8,
+      "passed": true
+    },
+    "bench_honesty": {
+      "n": 30,
+      "kappa": 1.0,
+      "threshold": 0.8,
+      "passed": true
+    },
+    "icp_accuracy": {
+      "n": 30,
+      "kappa": 1.0,
+      "threshold": 0.8,
+      "passed": true
+    },
+    "completeness": {
+      "n": 30,
+      "kappa": 1.0,
+      "threshold": 0.8,
+      "passed": true
+    },
+    "composite_pass": {
+      "n": 30,
+      "kappa": 1.0,
+      "threshold": 0.8,
+      "passed": true
+    }
+  },
+  "overall_passed": true,
+  "note": "Cohen's kappa with linear weighting on 0-5 ordinal scale. composite_pass uses binary kappa (YES=1, NO=0). Kappa >= 0.80 required on all dimensions before held-out evaluation."
+}

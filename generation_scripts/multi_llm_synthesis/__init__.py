@@ -30,8 +30,8 @@ def run_synthesis(existing_tasks: List[dict]) -> List[dict]:
         taxonomy = f"Failure category: {cat}"
         rubric = "Standard 5-dimension rubric (Tone, Grounding, Honesty, ICP, Completeness)"
         try:
-            # Generate 1 seed task per category
-            cat_seeds = generate_seed_tasks(num_tasks=1, taxonomy=taxonomy, rubric=rubric)
+            # Generate 2 seed tasks per category for more diversity
+            cat_seeds = generate_seed_tasks(num_tasks=2, taxonomy=taxonomy, rubric=rubric)
             seeds.extend(cat_seeds)
         except Exception as e:
             print(f"      [Synthesis] Error on seed {cat}: {e}")

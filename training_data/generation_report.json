@@ -1,0 +1,2113 @@
+{
+  "schema_version": "0.1",
+  "generated_at": "2026-05-02T02:20:00.861370+00:00",
+  "total_tasks": 139,
+  "pairs_written": 123,
+  "skipped": 16,
+  "total_cost_usd": 0.083266,
+  "rewriter_model": "",
+  "contamination_threshold_ngrams": 3,
+  "entries": [
+    {
+      "task_id": "TEN-TR-003",
+      "category": "bench-over-commitment",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00041,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have finance engineers'",
+        "task_banned_phrase: 'ready to deploy'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'finance' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-016",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00039000000000000005,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'clearly ahead'",
+        "task_banned_phrase: 'ai investment'",
+        "task_banned_phrase: 'scaling fast'",
+        "task_banned_phrase: 'ml platform'",
+        "task_banned_phrase: 'quick call'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-052",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00036250000000000003,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'clearly ahead'",
+        "task_banned_phrase: 'ai investment'",
+        "task_banned_phrase: 'scaling fast'",
+        "task_banned_phrase: 'ml platform'",
+        "task_banned_phrase: 'quick call'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-011",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.000865,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'clearly ahead'",
+        "task_banned_phrase: 'ai investment'",
+        "task_banned_phrase: 'scaling fast'",
+        "task_banned_phrase: 'ml platform'",
+        "task_banned_phrase: 'quick call'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-020",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0007215,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'clearly ahead'",
+        "task_banned_phrase: 'ai investment'",
+        "task_banned_phrase: 'scaling fast'",
+        "task_banned_phrase: 'ml platform'",
+        "task_banned_phrase: 'quick call'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-019",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000404,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'clearly ahead'",
+        "task_banned_phrase: 'ai investment'",
+        "task_banned_phrase: 'scaling fast'",
+        "task_banned_phrase: 'ml platform'",
+        "task_banned_phrase: 'quick call'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-005",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000407,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'hiring tear'",
+        "task_banned_phrase: 'serious hiring'",
+        "task_banned_phrase: 'aggressive expansion'",
+        "task_banned_phrase: '3-5x faster'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-070",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000414,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'clearly ahead'",
+        "task_banned_phrase: 'ai investment'",
+        "task_banned_phrase: 'scaling fast'",
+        "task_banned_phrase: 'ml platform'",
+        "task_banned_phrase: 'quick call'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-059",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000446,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'hiring tear'",
+        "task_banned_phrase: 'serious hiring'",
+        "task_banned_phrase: 'aggressive expansion'",
+        "task_banned_phrase: '3-5x faster'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-007",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00038750000000000004,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'hiring tear'",
+        "task_banned_phrase: 'serious hiring'",
+        "task_banned_phrase: 'aggressive expansion'",
+        "task_banned_phrase: '3-5x faster'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-008",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000398,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'hiring tear'",
+        "task_banned_phrase: 'serious hiring'",
+        "task_banned_phrase: 'aggressive expansion'",
+        "task_banned_phrase: '3-5x faster'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-031",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000434,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'hiring tear'",
+        "task_banned_phrase: 'serious hiring'",
+        "task_banned_phrase: 'aggressive expansion'",
+        "task_banned_phrase: '3-5x faster'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-024",
+      "category": "signal-over-claiming",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.000785,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'clearly ahead'",
+        "task_banned_phrase: 'ai investment'",
+        "task_banned_phrase: 'scaling fast'",
+        "task_banned_phrase: 'ml platform'",
+        "task_banned_phrase: 'quick call'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-060",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000374,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-038",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00038250000000000003,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-062",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000414,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-055",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000399,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-037",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003495,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-041",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0008075000000000001,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-061",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000415,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-032",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000398,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-027",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003795,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-054",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00039250000000000005,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-050",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00041400000000000003,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-042",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003615,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-030",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000372,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-026",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003685,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-071",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00039000000000000005,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-025",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003435,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-058",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000408,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-033",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003955,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-068",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0008795,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-053",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000402,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-072",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000372,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-067",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000373,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-047",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003945,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TR-045",
+      "category": "icp-misclassification",
+      "source_mode": "trace-derived",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000348,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-015",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.001077,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have go engineers'",
+        "task_banned_phrase: 'go engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'go' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-017",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.001068,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have go engineers'",
+        "task_banned_phrase: 'go engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'go' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-003",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0010785,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have rust engineers'",
+        "task_banned_phrase: 'rust engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'rust' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-018",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0010695,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have go engineers'",
+        "task_banned_phrase: 'go engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'go' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-002",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0010739999999999999,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have rust engineers'",
+        "task_banned_phrase: 'rust engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'rust' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-011",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.001083,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have go engineers'",
+        "task_banned_phrase: 'go engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'go' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-014",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0011070000000000001,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have go engineers'",
+        "task_banned_phrase: 'go engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'go' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-009",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.001068,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have rust engineers'",
+        "task_banned_phrase: 'rust engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'rust' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-008",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0010769999999999998,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have rust engineers'",
+        "task_banned_phrase: 'rust engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'rust' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-023",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.001059,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have scala engineers'",
+        "task_banned_phrase: 'scala engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'scala' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-012",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0010725,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have go engineers'",
+        "task_banned_phrase: 'go engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'go' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-016",
+      "category": "bench-over-commitment",
+      "source_mode": "programmatic",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0010665,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'have go engineers'",
+        "task_banned_phrase: 'go engineers available'",
+        "task_banned_phrase: 'put together a proposal'",
+        "bench_over_commitment: 'go' (available=0)"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-027",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0008535,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'aggressive hiring'",
+        "task_banned_phrase: 'hiring push'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-031",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004245,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'aggressive hiring'",
+        "task_banned_phrase: 'hiring push'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-037",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003815,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'congratulations'",
+        "task_banned_phrase: 'quick call'",
+        "task_banned_phrase: 'at your stage'",
+        "task_banned_phrase: 'recruiting wall'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-032",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0009059999999999999,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'aggressive hiring'",
+        "task_banned_phrase: 'hiring push'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-034",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0008925000000000001,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'aggressive hiring'",
+        "task_banned_phrase: 'hiring push'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-041",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000458,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'congratulations'",
+        "task_banned_phrase: 'quick call'",
+        "task_banned_phrase: 'at your stage'",
+        "task_banned_phrase: 'recruiting wall'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-030",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004415,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'aggressive hiring'",
+        "task_banned_phrase: 'hiring push'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-050",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004015,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'congratulations'",
+        "task_banned_phrase: 'quick call'",
+        "task_banned_phrase: 'at your stage'",
+        "task_banned_phrase: 'recruiting wall'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-039",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003725,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'congratulations'",
+        "task_banned_phrase: 'quick call'",
+        "task_banned_phrase: 'at your stage'",
+        "task_banned_phrase: 'recruiting wall'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-044",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000422,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'congratulations'",
+        "task_banned_phrase: 'quick call'",
+        "task_banned_phrase: 'at your stage'",
+        "task_banned_phrase: 'recruiting wall'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-026",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004575,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'aggressive hiring'",
+        "task_banned_phrase: 'hiring push'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-043",
+      "category": "signal-over-claiming",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.000871,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'congratulations'",
+        "task_banned_phrase: 'quick call'",
+        "task_banned_phrase: 'at your stage'",
+        "task_banned_phrase: 'recruiting wall'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-056",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00037450000000000005,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'series_b'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-072",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000419,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-069",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000388,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'series_b'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-052",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.000784,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'restructuring'",
+        "task_banned_phrase: 'backfill'",
+        "task_banned_phrase: 'replace departing'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-060",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000433,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'series_b'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-061",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000388,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'seed'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-057",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003985,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'series_b'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-065",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000418,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'seed'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-068",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.000803,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'series_b'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-070",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00038950000000000003,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'series_b'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-059",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004315,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'series_b'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-062",
+      "category": "icp-misclassification",
+      "source_mode": "programmatic",
+      "status": "ok",
+      "retries": 2,
+      "cost_usd": 0.00117,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'triple'",
+        "task_banned_phrase: '18 months'",
+        "task_banned_phrase: 'scale fast'",
+        "funding_stage_mismatch: 'series a' vs 'seed'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-SYN-001",
+      "category": "bench-over-commitment",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00039600000000000003,
+      "violations_on_rejected": [
+        "task_banned_phrase: '10–12 week range'",
+        "task_banned_phrase: 'CommerceFlow stands behind our implementation timelines'",
+        "task_banned_phrase: 'prepared to reflect that commitment in the contract language'",
+        "task_banned_phrase: 'contractual go-live language'",
+        "task_banned_phrase: 'dedicated implementation slot reserved for UrbanRetail within the week'",
+        "task_banned_phrase: 'availability to begin scoping immediately'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-SYN-002",
+      "category": "bench-over-commitment",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00043599999999999997,
+      "violations_on_rejected": [
+        "task_banned_phrase: '6–8 week range'",
+        "task_banned_phrase: 'Vertex Systems stands behind our implementation timelines'",
+        "task_banned_phrase: 'contractual go-live guarantee'",
+        "task_banned_phrase: 'immediate availability'",
+        "task_banned_phrase: 'reserve a dedicated slot for NovaFin this week'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-SYN-003",
+      "category": "bench-over-commitment",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00040800000000000005,
+      "violations_on_rejected": [
+        "task_banned_phrase: '6–7 week range'",
+        "task_banned_phrase: 'InsureSystems stands behind our implementation timelines'",
+        "task_banned_phrase: 'contractual go-live guarantee'",
+        "task_banned_phrase: 'immediate availability'",
+        "task_banned_phrase: 'reserve a dedicated slot for InsureTech Plus this week'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-SYN-004",
+      "category": "bench-over-commitment",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000369,
+      "violations_on_rejected": [
+        "task_banned_phrase: '4–5 week range'",
+        "task_banned_phrase: 'EduTech Systems stands behind our implementation timelines'",
+        "task_banned_phrase: 'contractual go-live guarantee'",
+        "task_banned_phrase: 'immediate availability'",
+        "task_banned_phrase: 'reserve a dedicated slot for EduNext this week'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-SYN-005",
+      "category": "bench-over-commitment",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004555,
+      "violations_on_rejected": [
+        "task_banned_phrase: '12–14 week range'",
+        "task_banned_phrase: 'EnterpriseScale stands behind our implementation timelines'",
+        "task_banned_phrase: 'prepared to reflect that commitment in the contract language'",
+        "task_banned_phrase: 'contractual go-live language'",
+        "task_banned_phrase: 'dedicated implementation slot reserved for SkyHigh within the week'",
+        "task_banned_phrase: 'availability to begin scoping immediately'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-SYN-006",
+      "category": "bench-over-commitment",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000379,
+      "violations_on_rejected": [
+        "task_banned_phrase: '2–3 week range'",
+        "task_banned_phrase: 'RealEstate Systems stands behind our implementation timelines'",
+        "task_banned_phrase: 'prepared to reflect that commitment in the contract language'",
+        "task_banned_phrase: 'contractual go-live language'",
+        "task_banned_phrase: 'dedicated implementation slot reserved for PropTech Innovations within the week'",
+        "task_banned_phrase: 'availability to begin scoping immediately'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-BOC-SYN-007",
+      "category": "bench-over-commitment",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003905,
+      "violations_on_rejected": [
+        "task_banned_phrase: '3–4 week range'",
+        "task_banned_phrase: 'MedTech Solutions stands behind our implementation timelines'",
+        "task_banned_phrase: 'prepared to reflect that commitment in the contract language'",
+        "task_banned_phrase: 'contractual go-live language'",
+        "task_banned_phrase: 'dedicated implementation slot reserved for GreenLeaf within the week'",
+        "task_banned_phrase: 'availability to begin scoping immediately'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-001",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00037450000000000005,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'real-time carrier capacity'",
+        "task_banned_phrase: 'refreshed continuously'",
+        "task_banned_phrase: 'never working from stale'",
+        "task_banned_phrase: 'Series A 3PLs specifically'",
+        "task_banned_phrase: 'Coastal Ventures-portfolio companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-002",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003465,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+        "task_banned_phrase: 'all production-ready connectors'",
+        "task_banned_phrase: 'a recent study across our customer base'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-003",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.00078,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+        "task_banned_phrase: 'all production-ready connectors'",
+        "task_banned_phrase: 'a recent study across our customer base'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-004",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.000785,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+        "task_banned_phrase: 'all production-ready connectors'",
+        "task_banned_phrase: 'a recent study across our customer base'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-005",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00040050000000000003,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+        "task_banned_phrase: 'all production-ready connectors'",
+        "task_banned_phrase: 'a recent study across our customer base'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-006",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00039600000000000003,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'real-time carrier capacity'",
+        "task_banned_phrase: 'refreshed continuously'",
+        "task_banned_phrase: 'never working from stale'",
+        "task_banned_phrase: 'VC-backed 3PLs specifically'",
+        "task_banned_phrase: 'Energy Partners-portfolio companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-007",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003665,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'real-time carrier capacity'",
+        "task_banned_phrase: 'refreshed continuously'",
+        "task_banned_phrase: 'never working from stale'",
+        "task_banned_phrase: 'VC-backed 3PLs specifically'",
+        "task_banned_phrase: 'Atlantic Partners-portfolio companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-008",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0007945,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+        "task_banned_phrase: 'all production-ready connectors'",
+        "task_banned_phrase: 'a recent study across our customer base'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-009",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00042600000000000005,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'real-time carrier capacity'",
+        "task_banned_phrase: 'refreshed continuously'",
+        "task_banned_phrase: 'never working from stale'",
+        "task_banned_phrase: 'PE-backed 3PLs specifically'",
+        "task_banned_phrase: 'Atlantic Capital-portfolio companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-010",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 2,
+      "cost_usd": 0.001143,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+        "task_banned_phrase: 'all production-ready connectors'",
+        "task_banned_phrase: 'a recent study across our customer base'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-011",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003735,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'real-time carrier capacity'",
+        "task_banned_phrase: 'refreshed continuously'",
+        "task_banned_phrase: 'never working from stale'",
+        "task_banned_phrase: 'VC-backed 3PLs specifically'",
+        "task_banned_phrase: 'Mountain Capital-portfolio companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-SOC-SYN-012",
+      "category": "signal-over-claiming",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00037799999999999997,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+        "task_banned_phrase: 'all production-ready connectors'",
+        "task_banned_phrase: 'a recent study across our customer base'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TON-SYN-001",
+      "category": "tone-drift",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00039400000000000004,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'blow your mind'",
+        "task_banned_phrase: 'absolutely love'",
+        "task_banned_phrase: 'so excited'",
+        "task_banned_phrase: 'pumped'",
+        "task_banned_phrase: 'amazing'",
+        "task_banned_phrase: 'awesome'",
+        "task_banned_phrase: 'incredible'",
+        "task_banned_phrase: 'revolutionize'",
+        "task_banned_phrase: 'perfect fit'",
+        "task_banned_phrase: 'speak for themselves'",
+        "task_banned_phrase: 'pushing the envelope'",
+        "task_banned_phrase: 'innovative leaders'",
+        "task_banned_phrase: 'transforms EduTech's entire operation'",
+        "task_banned_phrase: 'SO much'",
+        "task_banned_phrase: 'totally get it'",
+        "task_banned_phrase: 'you guys'",
+        "task_banned_phrase: 'tons of companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TON-SYN-002",
+      "category": "tone-drift",
+      "source_mode": "multi-llm-synthesis",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0011895,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'hope this finds you well'",
+        "task_banned_phrase: 'Hope this finds you well'",
+        "task_banned_phrase: 'Excited to connect'",
+        "task_banned_phrase: 'I wanted to reach out'",
+        "task_banned_phrase: 'transforms'",
+        "task_banned_phrase: 'seamlessly'",
+        "task_banned_phrase: 'transform'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TON-SYN-003",
+      "category": "tone-drift",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00039900000000000005,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'blow your mind'",
+        "task_banned_phrase: 'absolutely love'",
+        "task_banned_phrase: 'so excited'",
+        "task_banned_phrase: 'pumped'",
+        "task_banned_phrase: 'amazing'",
+        "task_banned_phrase: 'awesome'",
+        "task_banned_phrase: 'incredible'",
+        "task_banned_phrase: 'revolutionize'",
+        "task_banned_phrase: 'perfect fit'",
+        "task_banned_phrase: 'speak for themselves'",
+        "task_banned_phrase: 'pushing the envelope'",
+        "task_banned_phrase: 'innovative leaders'",
+        "task_banned_phrase: 'transforms HealthBridge's entire operation'",
+        "task_banned_phrase: 'SO much'",
+        "task_banned_phrase: 'totally get it'",
+        "task_banned_phrase: 'you guys'",
+        "task_banned_phrase: 'tons of companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TON-SYN-004",
+      "category": "tone-drift",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00040300000000000004,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'blow your mind'",
+        "task_banned_phrase: 'absolutely love'",
+        "task_banned_phrase: 'so excited'",
+        "task_banned_phrase: 'pumped'",
+        "task_banned_phrase: 'amazing'",
+        "task_banned_phrase: 'awesome'",
+        "task_banned_phrase: 'incredible'",
+        "task_banned_phrase: 'revolutionize'",
+        "task_banned_phrase: 'perfect fit'",
+        "task_banned_phrase: 'speak for themselves'",
+        "task_banned_phrase: 'pushing the envelope'",
+        "task_banned_phrase: 'innovative leaders'",
+        "task_banned_phrase: 'transforms AgriTech's entire operation'",
+        "task_banned_phrase: 'SO much'",
+        "task_banned_phrase: 'totally get it'",
+        "task_banned_phrase: 'you guys'",
+        "task_banned_phrase: 'tons of companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TON-SYN-005",
+      "category": "tone-drift",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00043599999999999997,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'blow your mind'",
+        "task_banned_phrase: 'absolutely love'",
+        "task_banned_phrase: 'so excited'",
+        "task_banned_phrase: 'pumped'",
+        "task_banned_phrase: 'amazing'",
+        "task_banned_phrase: 'awesome'",
+        "task_banned_phrase: 'incredible'",
+        "task_banned_phrase: 'revolutionize'",
+        "task_banned_phrase: 'perfect fit'",
+        "task_banned_phrase: 'speak for themselves'",
+        "task_banned_phrase: 'pushing the envelope'",
+        "task_banned_phrase: 'innovative leaders'",
+        "task_banned_phrase: 'transforms InsureTech's entire operation'",
+        "task_banned_phrase: 'SO much'",
+        "task_banned_phrase: 'totally get it'",
+        "task_banned_phrase: 'you guys'",
+        "task_banned_phrase: 'tons of companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TON-SYN-006",
+      "category": "tone-drift",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003935,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'blow your mind'",
+        "task_banned_phrase: 'absolutely love'",
+        "task_banned_phrase: 'so excited'",
+        "task_banned_phrase: 'pumped'",
+        "task_banned_phrase: 'amazing'",
+        "task_banned_phrase: 'awesome'",
+        "task_banned_phrase: 'incredible'",
+        "task_banned_phrase: 'revolutionize'",
+        "task_banned_phrase: 'perfect fit'",
+        "task_banned_phrase: 'speak for themselves'",
+        "task_banned_phrase: 'pushing the envelope'",
+        "task_banned_phrase: 'innovative leaders'",
+        "task_banned_phrase: 'transforms SecureNet's entire operation'",
+        "task_banned_phrase: 'SO much'",
+        "task_banned_phrase: 'totally get it'",
+        "task_banned_phrase: 'you guys'",
+        "task_banned_phrase: 'tons of companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TON-SYN-007",
+      "category": "tone-drift",
+      "source_mode": "multi-llm-synthesis",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.001161,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'hope this finds you well'",
+        "task_banned_phrase: 'Hope this finds you well'",
+        "task_banned_phrase: 'Excited to connect'",
+        "task_banned_phrase: 'I wanted to reach out'",
+        "task_banned_phrase: 'transforms'",
+        "task_banned_phrase: 'seamlessly'",
+        "task_banned_phrase: 'transform'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-TON-SYN-008",
+      "category": "tone-drift",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004255,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'game-changer'",
+        "task_banned_phrase: 'blow your mind'",
+        "task_banned_phrase: 'absolutely love'",
+        "task_banned_phrase: 'so excited'",
+        "task_banned_phrase: 'pumped'",
+        "task_banned_phrase: 'amazing'",
+        "task_banned_phrase: 'awesome'",
+        "task_banned_phrase: 'incredible'",
+        "task_banned_phrase: 'revolutionize'",
+        "task_banned_phrase: 'perfect fit'",
+        "task_banned_phrase: 'speak for themselves'",
+        "task_banned_phrase: 'pushing the envelope'",
+        "task_banned_phrase: 'innovative leaders'",
+        "task_banned_phrase: 'transforms AdScale's entire operation'",
+        "task_banned_phrase: 'SO much'",
+        "task_banned_phrase: 'totally get it'",
+        "task_banned_phrase: 'you guys'",
+        "task_banned_phrase: 'tons of companies'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-001",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0011265,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'practices like City Health Clinic'",
+        "task_banned_phrase: 'clinics navigating exactly the scaling challenges'",
+        "task_banned_phrase: 'the timing feels right to explore'",
+        "task_banned_phrase: 'healthcare customers'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-002",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 2,
+      "cost_usd": 0.0011565,
+      "violations_on_rejected": [],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-003",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0007610000000000001,
+      "violations_on_rejected": [],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-004",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0007589999999999999,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'agencies like Metrics Marketing'",
+        "task_banned_phrase: 'agencies navigating exactly the scaling challenges'",
+        "task_banned_phrase: 'the timing feels right to explore'",
+        "task_banned_phrase: 'marketing customers'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-005",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 2,
+      "cost_usd": 0.0011565,
+      "violations_on_rejected": [],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-006",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004135,
+      "violations_on_rejected": [],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-007",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 2,
+      "cost_usd": 0.001185,
+      "violations_on_rejected": [],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-008",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000377,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'firms like BuildRight Construction'",
+        "task_banned_phrase: 'firms navigating exactly the scaling challenges'",
+        "task_banned_phrase: 'the timing feels right to explore'",
+        "task_banned_phrase: 'construction customers'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-009",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 2,
+      "cost_usd": 0.001146,
+      "violations_on_rejected": [],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-010",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0007995,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'agencies like HelpDesk Pro'",
+        "task_banned_phrase: 'agencies navigating exactly the scaling challenges'",
+        "task_banned_phrase: 'the timing feels right to explore'",
+        "task_banned_phrase: 'support customers'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ICP-SYN-011",
+      "category": "icp-misclassification",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00039250000000000005,
+      "violations_on_rejected": [],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-001",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000334,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'Single Sign-On SAML'",
+        "task_banned_phrase: 'per-seat pricing model'",
+        "task_banned_phrase: 'exciting updates'",
+        "task_banned_phrase: 'couldn't be better'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-002",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000365,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'HIPAA Auto-Attest'",
+        "task_banned_phrase: 'per-seat pricing model'",
+        "task_banned_phrase: 'exciting updates'",
+        "task_banned_phrase: 'couldn't be better'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-003",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0005484999999999999,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'our pricing is structured in tiers rather than per seat'",
+        "task_banned_phrase: 'tends to be favorable for teams scaling employee volume'",
+        "task_banned_phrase: 'commercial conversation'",
+        "task_banned_phrase: 'send numbers cold'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-004",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000592,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'our pricing is structured per kWh rather than per seat'",
+        "task_banned_phrase: 'tends to be favorable for teams scaling volume'",
+        "task_banned_phrase: 'commercial conversation'",
+        "task_banned_phrase: 'send numbers cold'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-005",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003405,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'IoT Sensor Native'",
+        "task_banned_phrase: 'per-seat pricing model'",
+        "task_banned_phrase: 'exciting updates'",
+        "task_banned_phrase: 'couldn't be better'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-006",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000533,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'our pricing is structured per order rather than per seat'",
+        "task_banned_phrase: 'tends to be favorable for teams scaling volume'",
+        "task_banned_phrase: 'commercial conversation'",
+        "task_banned_phrase: 'send numbers cold'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-007",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003585,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'Carbon Credit Auto-Verify'",
+        "task_banned_phrase: 'per-seat pricing model'",
+        "task_banned_phrase: 'exciting updates'",
+        "task_banned_phrase: 'couldn't be better'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-008",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0005505,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'our pricing is structured per property rather than per seat'",
+        "task_banned_phrase: 'tends to be favorable for teams scaling volume'",
+        "task_banned_phrase: 'commercial conversation'",
+        "task_banned_phrase: 'send numbers cold'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-009",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0005149999999999999,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'our pricing is structured per node rather than per seat'",
+        "task_banned_phrase: 'tends to be favorable for teams scaling volume'",
+        "task_banned_phrase: 'commercial conversation'",
+        "task_banned_phrase: 'send numbers cold'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-010",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000542,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'our pricing is structured per student rather than per seat'",
+        "task_banned_phrase: 'tends to be favorable for teams scaling volume'",
+        "task_banned_phrase: 'commercial conversation'",
+        "task_banned_phrase: 'send numbers cold'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-011",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000527,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'our pricing is structured per patient rather than per seat'",
+        "task_banned_phrase: 'tends to be favorable for teams scaling volume'",
+        "task_banned_phrase: 'commercial conversation'",
+        "task_banned_phrase: 'send numbers cold'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-MTC-SYN-012",
+      "category": "multi-thread-conflict",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.000741,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'integrates natively with Slack'",
+        "task_banned_phrase: 'per-seat pricing model'",
+        "task_banned_phrase: 'exciting updates'",
+        "task_banned_phrase: 'couldn't be better'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-001",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003655,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'Apple'",
+        "task_banned_phrase: 'across their commercial teams'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-002",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 2,
+      "cost_usd": 0.00111,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'Tesla'",
+        "task_banned_phrase: 'across their commercial teams'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-003",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0008340000000000001,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'leverage'",
+        "task_banned_phrase: 'MiniInc'",
+        "task_banned_phrase: '28% in under 90 days'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-004",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.000822,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'leverage'",
+        "task_banned_phrase: 'ConnectAll'",
+        "task_banned_phrase: '31% in under 90 days'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-005",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004175,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'leverage'",
+        "task_banned_phrase: 'AtomInc'",
+        "task_banned_phrase: '23% in under 90 days'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-006",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.000428,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'leverage'",
+        "task_banned_phrase: 'FirmBase'",
+        "task_banned_phrase: '30% in under 90 days'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-007",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00041050000000000006,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'leverage'",
+        "task_banned_phrase: 'HugeSoft'",
+        "task_banned_phrase: '34% in under 90 days'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-008",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0006995,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'Walmart'",
+        "task_banned_phrase: 'across their commercial teams'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-009",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003655,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'Boeing'",
+        "task_banned_phrase: 'across their commercial teams'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-010",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0003925,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'Ford'",
+        "task_banned_phrase: 'across their commercial teams'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-011",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 2,
+      "cost_usd": 0.0012630000000000002,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'leverage'",
+        "task_banned_phrase: 'SkyBridge'",
+        "task_banned_phrase: '30% in under 90 days'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-012",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 1,
+      "cost_usd": 0.0007825,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'Lockheed Martin'",
+        "task_banned_phrase: 'across their commercial teams'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-013",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.0004285,
+      "violations_on_rejected": [
+        "global_banned_phrase: 'leverage'",
+        "task_banned_phrase: 'FastTrack'",
+        "task_banned_phrase: '27% in under 90 days'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-GHO-SYN-014",
+      "category": "ghost-company",
+      "source_mode": "multi-llm-synthesis",
+      "status": "skipped_chosen_failed_gates",
+      "retries": 3,
+      "cost_usd": 0.0011459999999999999,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'Bank of America'",
+        "task_banned_phrase: 'across their commercial teams'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ADV-003",
+      "category": "multi-thread-conflict",
+      "source_mode": "hand-authored",
+      "status": "ok",
+      "retries": 2,
+      "cost_usd": 0.0012645,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'aggressive hiring'",
+        "task_banned_phrase: 'hiring run'",
+        "task_banned_phrase: 'strong signal'",
+        "task_banned_phrase: 'compress your time'",
+        "task_banned_phrase: '60%'"
+      ],
+      "contaminated": false
+    },
+    {
+      "task_id": "TEN-ADV-001",
+      "category": "multi-thread-conflict",
+      "source_mode": "hand-authored",
+      "status": "ok",
+      "retries": 0,
+      "cost_usd": 0.00037949999999999995,
+      "violations_on_rejected": [
+        "task_banned_phrase: 'congrats on'",
+        "task_banned_phrase: 'accelerate engineering'",
+        "task_banned_phrase: 'ready to deploy'",
+        "task_banned_phrase: '15-minute'"
+      ],
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,2074 @@
+{
+  "seed": 42,
+  "n_bootstrap_resamples": 2000,
+  "partition": "G:\\projects\\week11\\sales-agent-evaluation-bench\\tenacious_bench_v0.1\\held_out.jsonl",
+  "n_tasks": 59,
+  "n_labelled_expected_fail": 33,
+  "summary": [
+    {
+      "method": "deterministic",
+      "n_tasks": 33,
+      "n_correct_fail": 33,
+      "detection_rate": 1.0
+    },
+    {
+      "method": "claude",
+      "n_tasks": 33,
+      "n_correct_fail": 33,
+      "detection_rate": 1.0
+    }
+  ],
+  "deltas": {},
+  "per_task": {
+    "deterministic": [
+      {
+        "task_id": "TEN-TR-009",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly ahead'",
+          "task_banned_phrase: 'ai investment'",
+          "task_banned_phrase: 'scaling fast'",
+          "task_banned_phrase: 'ml platform'",
+          "task_banned_phrase: 'quick call'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-010",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly ahead'",
+          "task_banned_phrase: 'ai investment'",
+          "task_banned_phrase: 'scaling fast'",
+          "task_banned_phrase: 'ml platform'",
+          "task_banned_phrase: 'quick call'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-018",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly ahead'",
+          "task_banned_phrase: 'ai investment'",
+          "task_banned_phrase: 'scaling fast'",
+          "task_banned_phrase: 'ml platform'",
+          "task_banned_phrase: 'quick call'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-004",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'hiring tear'",
+          "task_banned_phrase: 'serious hiring'",
+          "task_banned_phrase: 'aggressive expansion'",
+          "task_banned_phrase: '3-5x faster'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-015",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly ahead'",
+          "task_banned_phrase: 'ai investment'",
+          "task_banned_phrase: 'scaling fast'",
+          "task_banned_phrase: 'ml platform'",
+          "task_banned_phrase: 'quick call'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-051",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-064",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-028",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-023",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-073",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-063",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-034",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-039",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-029",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-022",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-020",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have scala engineers'",
+          "task_banned_phrase: 'scala engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'scala' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-006",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have rust engineers'",
+          "task_banned_phrase: 'rust engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'rust' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-025",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have scala engineers'",
+          "task_banned_phrase: 'scala engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'scala' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-013",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have go engineers'",
+          "task_banned_phrase: 'go engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'go' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-022",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have scala engineers'",
+          "task_banned_phrase: 'scala engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'scala' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-046",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'congratulations'",
+          "task_banned_phrase: 'quick call'",
+          "task_banned_phrase: 'at your stage'",
+          "task_banned_phrase: 'recruiting wall'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-042",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'congratulations'",
+          "task_banned_phrase: 'quick call'",
+          "task_banned_phrase: 'at your stage'",
+          "task_banned_phrase: 'recruiting wall'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-035",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'aggressive hiring'",
+          "task_banned_phrase: 'hiring push'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-028",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'aggressive hiring'",
+          "task_banned_phrase: 'hiring push'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-047",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'congratulations'",
+          "task_banned_phrase: 'quick call'",
+          "task_banned_phrase: 'at your stage'",
+          "task_banned_phrase: 'recruiting wall'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-074",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-066",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'",
+          "funding_stage_mismatch: output contains 'series a' but brief stage is 'series_b'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-063",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'",
+          "funding_stage_mismatch: output contains 'series a' but brief stage is 'seed'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-075",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-073",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-SYN-012",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: '12\u201314 week range'",
+          "task_banned_phrase: 'CleanTech Systems stands behind our implementation timelines'",
+          "task_banned_phrase: 'prepared to reflect that commitment in the contract language'",
+          "task_banned_phrase: 'contractual go-live language'",
+          "task_banned_phrase: 'dedicated implementation slot reserved for CleanEnergy within the week'",
+          "task_banned_phrase: 'availability to begin scoping immediately'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-BOC-SYN-013",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: '4\u20135 week range'",
+          "task_banned_phrase: 'CyberSystems stands behind our implementation timelines'",
+          "task_banned_phrase: 'contractual go-live guarantee'",
+          "task_banned_phrase: 'immediate availability'",
+          "task_banned_phrase: 'reserve a dedicated slot for SecureNet this week'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-BOC-SYN-014",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: '18\u201320 week range'",
+          "task_banned_phrase: 'PublicScale stands behind our implementation timelines'",
+          "task_banned_phrase: 'prepared to reflect that commitment in the contract language'",
+          "task_banned_phrase: 'contractual go-live language'",
+          "task_banned_phrase: 'dedicated implementation slot reserved for GovTech within the week'",
+          "task_banned_phrase: 'availability to begin scoping immediately'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-020",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+          "task_banned_phrase: 'all production-ready connectors'",
+          "task_banned_phrase: 'a recent study across our customer base'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-021",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'real-time carrier capacity'",
+          "task_banned_phrase: 'refreshed continuously'",
+          "task_banned_phrase: 'never working from stale'",
+          "task_banned_phrase: 'PE-backed 3PLs specifically'",
+          "task_banned_phrase: 'Titan Capital-portfolio companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-022",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'real-time carrier capacity'",
+          "task_banned_phrase: 'refreshed continuously'",
+          "task_banned_phrase: 'never working from stale'",
+          "task_banned_phrase: 'Series A forwarders specifically'",
+          "task_banned_phrase: 'Pacific Ventures-portfolio companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-023",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+          "task_banned_phrase: 'all production-ready connectors'",
+          "task_banned_phrase: 'a recent study across our customer base'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-024",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'real-time carrier capacity'",
+          "task_banned_phrase: 'refreshed continuously'",
+          "task_banned_phrase: 'never working from stale'",
+          "task_banned_phrase: 'VC-backed 3PLs specifically'",
+          "task_banned_phrase: 'Border Capital-portfolio companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-TON-SYN-013",
+        "category": "tone-drift",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'blow your mind'",
+          "task_banned_phrase: 'absolutely love'",
+          "task_banned_phrase: 'so excited'",
+          "task_banned_phrase: 'pumped'",
+          "task_banned_phrase: 'amazing'",
+          "task_banned_phrase: 'awesome'",
+          "task_banned_phrase: 'incredible'",
+          "task_banned_phrase: 'revolutionize'",
+          "task_banned_phrase: 'perfect fit'",
+          "task_banned_phrase: 'speak for themselves'",
+          "task_banned_phrase: 'pushing the envelope'",
+          "task_banned_phrase: 'innovative leaders'",
+          "task_banned_phrase: 'transforms ShopFlow's entire operation'",
+          "task_banned_phrase: 'SO much'",
+          "task_banned_phrase: 'totally get it'",
+          "task_banned_phrase: 'you guys'",
+          "task_banned_phrase: 'tons of companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-TON-SYN-014",
+        "category": "tone-drift",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'blow your mind'",
+          "task_banned_phrase: 'absolutely love'",
+          "task_banned_phrase: 'so excited'",
+          "task_banned_phrase: 'pumped'",
+          "task_banned_phrase: 'amazing'",
+          "task_banned_phrase: 'awesome'",
+          "task_banned_phrase: 'incredible'",
+          "task_banned_phrase: 'revolutionize'",
+          "task_banned_phrase: 'perfect fit'",
+          "task_banned_phrase: 'speak for themselves'",
+          "task_banned_phrase: 'pushing the envelope'",
+          "task_banned_phrase: 'innovative leaders'",
+          "task_banned_phrase: 'transforms GreenEnergy's entire operation'",
+          "task_banned_phrase: 'SO much'",
+          "task_banned_phrase: 'totally get it'",
+          "task_banned_phrase: 'you guys'",
+          "task_banned_phrase: 'tons of companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-TON-SYN-015",
+        "category": "tone-drift",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'blow your mind'",
+          "task_banned_phrase: 'absolutely love'",
+          "task_banned_phrase: 'so excited'",
+          "task_banned_phrase: 'pumped'",
+          "task_banned_phrase: 'amazing'",
+          "task_banned_phrase: 'awesome'",
+          "task_banned_phrase: 'incredible'",
+          "task_banned_phrase: 'revolutionize'",
+          "task_banned_phrase: 'perfect fit'",
+          "task_banned_phrase: 'speak for themselves'",
+          "task_banned_phrase: 'pushing the envelope'",
+          "task_banned_phrase: 'innovative leaders'",
+          "task_banned_phrase: 'transforms MfgTech's entire operation'",
+          "task_banned_phrase: 'SO much'",
+          "task_banned_phrase: 'totally get it'",
+          "task_banned_phrase: 'you guys'",
+          "task_banned_phrase: 'tons of companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ICP-SYN-019",
+        "category": "icp-misclassification",
+        "difficulty": "hard",
+        "composite_score": 0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [],
+        "dimension_scores": {},
+        "scored_by": "deterministic",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ICP-SYN-020",
+        "category": "icp-misclassification",
+        "difficulty": "hard",
+        "composite_score": 0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [],
+        "dimension_scores": {},
+        "scored_by": "deterministic",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ICP-SYN-021",
+        "category": "icp-misclassification",
+        "difficulty": "hard",
+        "composite_score": 0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [],
+        "dimension_scores": {},
+        "scored_by": "deterministic",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ICP-SYN-022",
+        "category": "icp-misclassification",
+        "difficulty": "hard",
+        "composite_score": 0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [],
+        "dimension_scores": {},
+        "scored_by": "deterministic",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-021",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'our pricing is structured per device rather than per seat'",
+          "task_banned_phrase: 'tends to be favorable for teams scaling asset volume'",
+          "task_banned_phrase: 'commercial conversation'",
+          "task_banned_phrase: 'send numbers cold'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-022",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'ISO 27001 Certified'",
+          "task_banned_phrase: 'per-seat pricing model'",
+          "task_banned_phrase: 'exciting updates'",
+          "task_banned_phrase: 'couldn't be better'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-023",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'Workday Native Connector'",
+          "task_banned_phrase: 'per-seat pricing model'",
+          "task_banned_phrase: 'exciting updates'",
+          "task_banned_phrase: 'couldn't be better'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-024",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'Shopify App Store Certified'",
+          "task_banned_phrase: 'per-seat pricing model'",
+          "task_banned_phrase: 'exciting updates'",
+          "task_banned_phrase: 'couldn't be better'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-025",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'our pricing is structured per case rather than per seat'",
+          "task_banned_phrase: 'tends to be favorable for teams scaling volume'",
+          "task_banned_phrase: 'commercial conversation'",
+          "task_banned_phrase: 'send numbers cold'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-023",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'leverage'",
+          "task_banned_phrase: 'WorldZ'",
+          "task_banned_phrase: '33% in under 90 days'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-024",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'leverage'",
+          "task_banned_phrase: 'VertexAI'",
+          "task_banned_phrase: '32% in under 90 days'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-025",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'General Motors'",
+          "task_banned_phrase: 'across their commercial teams'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-026",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'Disney'",
+          "task_banned_phrase: 'across their commercial teams'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-027",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'leverage'",
+          "task_banned_phrase: 'GammaSys'",
+          "task_banned_phrase: '29% in under 90 days'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-028",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'Coca-Cola'",
+          "task_banned_phrase: 'across their commercial teams'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ADV-005",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'would love to'",
+          "task_banned_phrase: 'your ceo is already'",
+          "task_banned_phrase: 'mentioned budget pressure'",
+          "task_banned_phrase: 'much cheaper'",
+          "task_banned_phrase: 'cut costs'",
+          "task_banned_phrase: 'would love'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ADV-002",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly has'",
+          "task_banned_phrase: 'at your stage'",
+          "task_banned_phrase: 'most series b'",
+          "task_banned_phrase: 'ai-native'",
+          "task_banned_phrase: 'quick conversation'",
+          "task_banned_phrase: 'sophistication'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ADV-004",
+        "category": "tone-drift",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'market data is clear'",
+          "task_banned_phrase: 'competitors are ahead'",
+          "task_banned_phrase: '40% higher'",
+          "task_banned_phrase: 'encourage you to reconsider'",
+          "task_banned_phrase: 'let me know'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      }
+    ],
+    "claude": [
+      {
+        "task_id": "TEN-TR-009",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly ahead'",
+          "task_banned_phrase: 'ai investment'",
+          "task_banned_phrase: 'scaling fast'",
+          "task_banned_phrase: 'ml platform'",
+          "task_banned_phrase: 'quick call'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-010",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly ahead'",
+          "task_banned_phrase: 'ai investment'",
+          "task_banned_phrase: 'scaling fast'",
+          "task_banned_phrase: 'ml platform'",
+          "task_banned_phrase: 'quick call'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-018",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly ahead'",
+          "task_banned_phrase: 'ai investment'",
+          "task_banned_phrase: 'scaling fast'",
+          "task_banned_phrase: 'ml platform'",
+          "task_banned_phrase: 'quick call'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-004",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'hiring tear'",
+          "task_banned_phrase: 'serious hiring'",
+          "task_banned_phrase: 'aggressive expansion'",
+          "task_banned_phrase: '3-5x faster'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-015",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly ahead'",
+          "task_banned_phrase: 'ai investment'",
+          "task_banned_phrase: 'scaling fast'",
+          "task_banned_phrase: 'ml platform'",
+          "task_banned_phrase: 'quick call'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-051",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-064",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-028",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-023",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-073",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-063",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-034",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-039",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-029",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-TR-022",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'restructuring'",
+          "task_banned_phrase: 'backfill'",
+          "task_banned_phrase: '15-minute'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-020",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have scala engineers'",
+          "task_banned_phrase: 'scala engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'scala' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-006",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have rust engineers'",
+          "task_banned_phrase: 'rust engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'rust' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-025",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have scala engineers'",
+          "task_banned_phrase: 'scala engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'scala' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-013",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have go engineers'",
+          "task_banned_phrase: 'go engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'go' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-022",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'have scala engineers'",
+          "task_banned_phrase: 'scala engineers available'",
+          "task_banned_phrase: 'put together a proposal'",
+          "bench_over_commitment: commits 'scala' stack (available_engineers=0)"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-046",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'congratulations'",
+          "task_banned_phrase: 'quick call'",
+          "task_banned_phrase: 'at your stage'",
+          "task_banned_phrase: 'recruiting wall'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-042",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'congratulations'",
+          "task_banned_phrase: 'quick call'",
+          "task_banned_phrase: 'at your stage'",
+          "task_banned_phrase: 'recruiting wall'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-035",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'aggressive hiring'",
+          "task_banned_phrase: 'hiring push'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-028",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'aggressive hiring'",
+          "task_banned_phrase: 'hiring push'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-SOC-047",
+        "category": "signal-over-claiming",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'congratulations'",
+          "task_banned_phrase: 'quick call'",
+          "task_banned_phrase: 'at your stage'",
+          "task_banned_phrase: 'recruiting wall'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-074",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-066",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'",
+          "funding_stage_mismatch: output contains 'series a' but brief stage is 'series_b'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-063",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'",
+          "funding_stage_mismatch: output contains 'series a' but brief stage is 'seed'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-075",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ICP-073",
+        "category": "icp-misclassification",
+        "difficulty": "medium",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'triple'",
+          "task_banned_phrase: '18 months'",
+          "task_banned_phrase: 'scale fast'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-BOC-SYN-012",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: '12\u201314 week range'",
+          "task_banned_phrase: 'CleanTech Systems stands behind our implementation timelines'",
+          "task_banned_phrase: 'prepared to reflect that commitment in the contract language'",
+          "task_banned_phrase: 'contractual go-live language'",
+          "task_banned_phrase: 'dedicated implementation slot reserved for CleanEnergy within the week'",
+          "task_banned_phrase: 'availability to begin scoping immediately'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-BOC-SYN-013",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: '4\u20135 week range'",
+          "task_banned_phrase: 'CyberSystems stands behind our implementation timelines'",
+          "task_banned_phrase: 'contractual go-live guarantee'",
+          "task_banned_phrase: 'immediate availability'",
+          "task_banned_phrase: 'reserve a dedicated slot for SecureNet this week'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-BOC-SYN-014",
+        "category": "bench-over-commitment",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: '18\u201320 week range'",
+          "task_banned_phrase: 'PublicScale stands behind our implementation timelines'",
+          "task_banned_phrase: 'prepared to reflect that commitment in the contract language'",
+          "task_banned_phrase: 'contractual go-live language'",
+          "task_banned_phrase: 'dedicated implementation slot reserved for GovTech within the week'",
+          "task_banned_phrase: 'availability to begin scoping immediately'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-020",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+          "task_banned_phrase: 'all production-ready connectors'",
+          "task_banned_phrase: 'a recent study across our customer base'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-021",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'real-time carrier capacity'",
+          "task_banned_phrase: 'refreshed continuously'",
+          "task_banned_phrase: 'never working from stale'",
+          "task_banned_phrase: 'PE-backed 3PLs specifically'",
+          "task_banned_phrase: 'Titan Capital-portfolio companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-022",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'real-time carrier capacity'",
+          "task_banned_phrase: 'refreshed continuously'",
+          "task_banned_phrase: 'never working from stale'",
+          "task_banned_phrase: 'Series A forwarders specifically'",
+          "task_banned_phrase: 'Pacific Ventures-portfolio companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-023",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'most customers see this within the first few weeks of going live'",
+          "task_banned_phrase: 'all production-ready connectors'",
+          "task_banned_phrase: 'a recent study across our customer base'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-SOC-SYN-024",
+        "category": "signal-over-claiming",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'real-time carrier capacity'",
+          "task_banned_phrase: 'refreshed continuously'",
+          "task_banned_phrase: 'never working from stale'",
+          "task_banned_phrase: 'VC-backed 3PLs specifically'",
+          "task_banned_phrase: 'Border Capital-portfolio companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-TON-SYN-013",
+        "category": "tone-drift",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'blow your mind'",
+          "task_banned_phrase: 'absolutely love'",
+          "task_banned_phrase: 'so excited'",
+          "task_banned_phrase: 'pumped'",
+          "task_banned_phrase: 'amazing'",
+          "task_banned_phrase: 'awesome'",
+          "task_banned_phrase: 'incredible'",
+          "task_banned_phrase: 'revolutionize'",
+          "task_banned_phrase: 'perfect fit'",
+          "task_banned_phrase: 'speak for themselves'",
+          "task_banned_phrase: 'pushing the envelope'",
+          "task_banned_phrase: 'innovative leaders'",
+          "task_banned_phrase: 'transforms ShopFlow's entire operation'",
+          "task_banned_phrase: 'SO much'",
+          "task_banned_phrase: 'totally get it'",
+          "task_banned_phrase: 'you guys'",
+          "task_banned_phrase: 'tons of companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-TON-SYN-014",
+        "category": "tone-drift",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'blow your mind'",
+          "task_banned_phrase: 'absolutely love'",
+          "task_banned_phrase: 'so excited'",
+          "task_banned_phrase: 'pumped'",
+          "task_banned_phrase: 'amazing'",
+          "task_banned_phrase: 'awesome'",
+          "task_banned_phrase: 'incredible'",
+          "task_banned_phrase: 'revolutionize'",
+          "task_banned_phrase: 'perfect fit'",
+          "task_banned_phrase: 'speak for themselves'",
+          "task_banned_phrase: 'pushing the envelope'",
+          "task_banned_phrase: 'innovative leaders'",
+          "task_banned_phrase: 'transforms GreenEnergy's entire operation'",
+          "task_banned_phrase: 'SO much'",
+          "task_banned_phrase: 'totally get it'",
+          "task_banned_phrase: 'you guys'",
+          "task_banned_phrase: 'tons of companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-TON-SYN-015",
+        "category": "tone-drift",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'game-changer'",
+          "task_banned_phrase: 'blow your mind'",
+          "task_banned_phrase: 'absolutely love'",
+          "task_banned_phrase: 'so excited'",
+          "task_banned_phrase: 'pumped'",
+          "task_banned_phrase: 'amazing'",
+          "task_banned_phrase: 'awesome'",
+          "task_banned_phrase: 'incredible'",
+          "task_banned_phrase: 'revolutionize'",
+          "task_banned_phrase: 'perfect fit'",
+          "task_banned_phrase: 'speak for themselves'",
+          "task_banned_phrase: 'pushing the envelope'",
+          "task_banned_phrase: 'innovative leaders'",
+          "task_banned_phrase: 'transforms MfgTech's entire operation'",
+          "task_banned_phrase: 'SO much'",
+          "task_banned_phrase: 'totally get it'",
+          "task_banned_phrase: 'you guys'",
+          "task_banned_phrase: 'tons of companies'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ICP-SYN-019",
+        "category": "icp-misclassification",
+        "difficulty": "hard",
+        "composite_score": 0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [],
+        "dimension_scores": {
+          "tone_adherence": 3,
+          "signal_grounding": 3,
+          "bench_honesty": 2,
+          "icp_accuracy": 1,
+          "completeness": 2
+        },
+        "scored_by": "llm",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ICP-SYN-020",
+        "category": "icp-misclassification",
+        "difficulty": "hard",
+        "composite_score": 0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [],
+        "dimension_scores": {
+          "tone_adherence": 3,
+          "signal_grounding": 4,
+          "bench_honesty": 4,
+          "icp_accuracy": 1,
+          "completeness": 2
+        },
+        "scored_by": "llm",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ICP-SYN-021",
+        "category": "icp-misclassification",
+        "difficulty": "hard",
+        "composite_score": 0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [],
+        "dimension_scores": {
+          "tone_adherence": 2,
+          "signal_grounding": 3,
+          "bench_honesty": 4,
+          "icp_accuracy": 1,
+          "completeness": 2
+        },
+        "scored_by": "llm",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ICP-SYN-022",
+        "category": "icp-misclassification",
+        "difficulty": "hard",
+        "composite_score": 0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [],
+        "dimension_scores": {
+          "tone_adherence": 3,
+          "signal_grounding": 4,
+          "bench_honesty": 4,
+          "icp_accuracy": 1,
+          "completeness": 2
+        },
+        "scored_by": "llm",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-021",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'our pricing is structured per device rather than per seat'",
+          "task_banned_phrase: 'tends to be favorable for teams scaling asset volume'",
+          "task_banned_phrase: 'commercial conversation'",
+          "task_banned_phrase: 'send numbers cold'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-022",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'ISO 27001 Certified'",
+          "task_banned_phrase: 'per-seat pricing model'",
+          "task_banned_phrase: 'exciting updates'",
+          "task_banned_phrase: 'couldn't be better'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-023",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'Workday Native Connector'",
+          "task_banned_phrase: 'per-seat pricing model'",
+          "task_banned_phrase: 'exciting updates'",
+          "task_banned_phrase: 'couldn't be better'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-024",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'Shopify App Store Certified'",
+          "task_banned_phrase: 'per-seat pricing model'",
+          "task_banned_phrase: 'exciting updates'",
+          "task_banned_phrase: 'couldn't be better'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-MTC-SYN-025",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'our pricing is structured per case rather than per seat'",
+          "task_banned_phrase: 'tends to be favorable for teams scaling volume'",
+          "task_banned_phrase: 'commercial conversation'",
+          "task_banned_phrase: 'send numbers cold'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-023",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'leverage'",
+          "task_banned_phrase: 'WorldZ'",
+          "task_banned_phrase: '33% in under 90 days'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-024",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'leverage'",
+          "task_banned_phrase: 'VertexAI'",
+          "task_banned_phrase: '32% in under 90 days'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-025",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'General Motors'",
+          "task_banned_phrase: 'across their commercial teams'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-026",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'Disney'",
+          "task_banned_phrase: 'across their commercial teams'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-027",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'leverage'",
+          "task_banned_phrase: 'GammaSys'",
+          "task_banned_phrase: '29% in under 90 days'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-GHO-SYN-028",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'Coca-Cola'",
+          "task_banned_phrase: 'across their commercial teams'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": null
+      },
+      {
+        "task_id": "TEN-ADV-005",
+        "category": "multi-thread-conflict",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "global_banned_phrase: 'would love to'",
+          "task_banned_phrase: 'your ceo is already'",
+          "task_banned_phrase: 'mentioned budget pressure'",
+          "task_banned_phrase: 'much cheaper'",
+          "task_banned_phrase: 'cut costs'",
+          "task_banned_phrase: 'would love'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ADV-002",
+        "category": "ghost-company",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'clearly has'",
+          "task_banned_phrase: 'at your stage'",
+          "task_banned_phrase: 'most series b'",
+          "task_banned_phrase: 'ai-native'",
+          "task_banned_phrase: 'quick conversation'",
+          "task_banned_phrase: 'sophistication'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      },
+      {
+        "task_id": "TEN-ADV-004",
+        "category": "tone-drift",
+        "difficulty": "hard",
+        "composite_score": 0.0,
+        "pass_threshold": 3.5,
+        "passed": false,
+        "hard_gate_failures": [
+          "task_banned_phrase: 'market data is clear'",
+          "task_banned_phrase: 'competitors are ahead'",
+          "task_banned_phrase: '40% higher'",
+          "task_banned_phrase: 'encourage you to reconsider'",
+          "task_banned_phrase: 'let me know'"
+        ],
+        "dimension_scores": {},
+        "scored_by": "hard_gate",
+        "expected_pass": false
+      }
+    ]
+  }
+}
