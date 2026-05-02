@@ -119,14 +119,14 @@ Banned: "18–20 week range", "PublicScale stands behind our implementation time
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -182,14 +182,14 @@ Banned: "have go engineers", "go engineers available", "can get them started", "
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -245,14 +245,14 @@ Banned: "have go engineers", "go engineers available", "can get them started", "
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -332,14 +332,14 @@ Banned: "12–14 week range", "EnterpriseScale stands behind our implementation 
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -417,14 +417,14 @@ Banned: "6–7 week range", "InsureSystems stands behind our implementation time
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -501,14 +501,14 @@ Banned: "Walmart", "retail", "across their commercial teams", "manages high-volu
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -590,14 +590,14 @@ Banned: "AtomInc", "23% in under 90 days", "any fabricated or unapproved custome
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -679,14 +679,14 @@ Banned: "VertexAI", "32% in under 90 days", "any fabricated or unapproved custom
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -768,14 +768,14 @@ Banned: "ConnectAll", "31% in under 90 days", "any fabricated or unapproved cust
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -857,14 +857,14 @@ Banned: "NewWave", "25% in under 90 days", "any fabricated or unapproved custome
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -947,14 +947,14 @@ Banned: "game-changer", "synergies", "end-to-end solution", "leverage our platfo
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1009,14 +1009,14 @@ Banned: "triple", "18 months", "scale fast", "at your stage" | Required: "2"
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1071,14 +1071,14 @@ Banned: "restructuring", "backfill", "15-minute", "triple" ... | Required: "seri
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1161,14 +1161,14 @@ Banned: "game-changer", "synergies", "end-to-end solution", "leverage our platfo
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1223,14 +1223,14 @@ Banned: "restructuring", "backfill", "15-minute", "triple" ... | Required: "seri
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1317,14 +1317,14 @@ Banned: "HIPAA Auto-Attest", "per-seat pricing model", "exciting updates", "coul
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1411,14 +1411,14 @@ Banned: "Single Sign-On SAML", "per-seat pricing model", "exciting updates", "co
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1503,14 +1503,14 @@ Banned: "our pricing is structured in tiers rather than per seat", "tends to be 
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1597,14 +1597,14 @@ Banned: "Carbon Credit Auto-Verify", "per-seat pricing model", "exciting updates
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1689,14 +1689,14 @@ Banned: "our pricing is structured per property rather than per seat", "tends to
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1751,14 +1751,14 @@ Banned: "congratulations", "recent round", "quick call", "quick chat" ... | Requ
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1813,14 +1813,14 @@ Banned: "clearly ahead", "ai investment", "scaling fast", "ml platform" ... | Re
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.30 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.30 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.20 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.10 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.10 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1900,14 +1900,14 @@ Banned: "most customers see this within the first few weeks of going live", "all
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -1987,14 +1987,14 @@ Banned: "most customers see this within the first few weeks of going live", "all
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -2080,14 +2080,14 @@ Banned: "real-time carrier capacity", "refreshed continuously", "never working f
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -2171,14 +2171,14 @@ Banned: "game-changer", "blow your mind", "absolutely love", "super excited" ...
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -2262,14 +2262,14 @@ Banned: "game-changer", "blow your mind", "absolutely love", "super excited" ...
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -2353,14 +2353,14 @@ Banned: "game-changer", "blow your mind", "absolutely love", "super excited" ...
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -2444,14 +2444,14 @@ Banned: "game-changer", "blow your mind", "absolutely love", "super excited" ...
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
@@ -2535,14 +2535,14 @@ Banned: "game-changer", "blow your mind", "absolutely love", "super excited" ...
 
 | Dimension | Weight | Anchor | R1 Score (1-5) | R2 Score (1-5) |
 |-----------|--------|--------|---------------|---------------|
-| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | | |
-| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | | |
-| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | | |
-| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | | |
-| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | | |
+| tone_adherence | 0.00 | 1=banned phrase / uses 'bench' externally  3=neutral  5=warm... | 0 | 0 |
+| signal_grounding | 0.00 | 1=fabricated capacity  3=partially grounded  5=fully grounde... | 0 | 0 |
+| bench_honesty | 0.00 | 1=false commitment on zero-stack  3=vague  5=explicit discla... | 0 | 0 |
+| icp_accuracy | 0.00 | 1=wrong segment  3=plausible  5=spot-on for stage/size/domain | 0 | 0 |
+| completeness | 0.00 | 1=missing required element  3=adequate  5=all elements prese... | 0 | 0 |
 
-**Hard-gate triggered?** (circle one)  YES / NO  
-**Composite pass?** (circle one)  YES / NO  
+**Hard-gate triggered?** YES  
+**Composite pass?** NO  
 **Notes (R1):**
 
 > _Write any dimension-specific observations here._
