@@ -1,0 +1,16 @@
+{
+  "model": "Qwen/Qwen3.5-0.8B",
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "orpo_beta": 0.1,
+  "lr": 0.0002,
+  "epochs": 3,
+  "batch_size": 1,
+  "grad_accum": 4,
+  "max_seq_len": 512,
+  "seed": 42,
+  "train_pairs": 110,
+  "eval_pairs": 13,
+  "final_train_loss": 0.36059990241414025,
+  "runtime_seconds": 659.1388
+}

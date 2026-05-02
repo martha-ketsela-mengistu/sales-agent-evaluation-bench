@@ -153,7 +153,7 @@ def check_hard_gates(task: dict, output: str) -> tuple[bool, list[str]]:
     # 4. Funding stage mismatch (signal_grounding hard gate)
     brief = task.get("input_context", {}).get("prospect_brief", {})
     funding = brief.get("funding", {})
-    if funding:
+    if funding and isinstance(funding, dict):
         actual_stage = funding.get("stage", "").lower()
         for stage, aliases in STAGE_ALIASES.items():
             if stage != actual_stage:
@@ -167,11 +167,15 @@ def check_hard_gates(task: dict, output: str) -> tuple[bool, list[str]]:
     # 5. Bench capacity — zero-available stacks (bench_honesty hard gate)
     bench = task.get("input_context", {}).get("bench_summary", {})
     for stack, info in bench.items():
-        available = (
-            info.get("available_engineers", 0)
-            if isinstance(info, dict)
-            else int(info)
-        )
+        if isinstance(info, dict):
+            available = info.get("available_engineers", 0)
+        elif isinstance(info, int):
+            available = info
+        else:
+            try:
+                available = int(info)
+            except (TypeError, ValueError):
+                continue
         if available == 0:
             commitment_patterns = [
                 rf"\bhave {stack}\b",
@@ -277,23 +281,58 @@ def score_dimensions_deterministic(task: dict, output: str) -> dict[str, int]:
 # LLM judge  (Pipeline A — Step 2, primary path)
 # ---------------------------------------------------------------------------
 
+def _call_llm_judge(prompt: str) -> str:
+    """
+    Call an LLM judge via Anthropic SDK or OpenRouter (fallback).
+    Returns the raw text response. Raises on failure.
+    """
+    import requests as _req
+
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
+    openrouter_key = os.environ.get("OPENROUTER_API_KEY")
+
+    if anthropic_key:
+        try:
+            import anthropic as _ant
+            client = _ant.Anthropic(api_key=anthropic_key)
+            resp = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=128,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            return resp.content[0].text.strip()
+        except Exception as exc:
+            raise RuntimeError(f"Anthropic API error: {exc}") from exc
+
+    if openrouter_key:
+        resp = _req.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {openrouter_key}",
+                "HTTP-Referer": "http://localhost:3000",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": "anthropic/claude-sonnet-4-6",
+                "messages": [{"role": "user", "content": prompt}],
+                "max_tokens": 128,
+                "temperature": 0.0,
+            },
+            timeout=30,
+        )
+        data = resp.json()
+        if "error" in data:
+            raise RuntimeError(f"OpenRouter error: {data['error']}")
+        return data["choices"][0]["message"]["content"].strip()
+
+    raise RuntimeError("No LLM key: set ANTHROPIC_API_KEY or OPENROUTER_API_KEY")
+
+
 def score_dimensions_llm(task: dict, output: str) -> tuple[dict[str, int], str]:
     """
     Returns (dimension_scores, method).
     method is 'llm' on success, 'deterministic' on fallback.
     """
-    try:
-        import anthropic
-    except ImportError:
-        print("  [warn] anthropic not installed — deterministic fallback", file=sys.stderr)
-        return score_dimensions_deterministic(task, output), "deterministic"
-
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        print("  [warn] ANTHROPIC_API_KEY not set — deterministic fallback", file=sys.stderr)
-        return score_dimensions_deterministic(task, output), "deterministic"
-
-    client = anthropic.Anthropic(api_key=api_key)
     rubric = task.get("evaluator_config", {}).get("rubric", [])
 
     prompt = f"""You are a Tenacious sales evaluation judge. Score the agent output on each rubric dimension 1–5.
@@ -332,12 +371,7 @@ Return ONLY a JSON object with integer scores 1–5:
 No markdown. No explanation."""
 
     try:
-        response = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=128,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        raw = response.content[0].text.strip()
+        raw = _call_llm_judge(prompt)
         raw = re.sub(r"^```[a-z]*\n?", "", raw).rstrip("```").strip()
         scores = {k: int(v) for k, v in json.loads(raw).items()}
         return scores, "llm"
@@ -483,7 +517,8 @@ def main() -> int:
             return 2
 
     use_llm = not args.no_llm
-    scorer_label = "llm (claude-sonnet-4-6)" if use_llm else "deterministic"
+    backend = "openrouter" if os.environ.get("OPENROUTER_API_KEY") and not os.environ.get("ANTHROPIC_API_KEY") else "anthropic"
+    scorer_label = f"llm (claude-sonnet-4-6 via {backend})" if use_llm else "deterministic"
     print(
         f"Tenacious-Bench v0.1  |  {len(tasks)} task(s)"
         f"  |  seed={args.seed}  |  scorer={scorer_label}"
